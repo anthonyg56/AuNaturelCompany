@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Star } from "lucide-react"
+import Link from "next/link"
 
 export const metadata = {
   title: "Loc Services",
@@ -12,17 +13,24 @@ export default function LocsServicesPage() {
   return (
     <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
-      <section className="py-20 bg-gray-700 text-white">
-        <div className="container">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl font-bold tracking-tight mb-4">Elevate Your Locs</h1>
-            <p className="text-lg text-gray-200 mb-6">
+      <section className="relative py-16 bg-gray-900 text-white">
+        <div className="absolute inset-0 z-0 opacity-30">
+          <Image
+            src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=1600&auto=format&fit=crop&q=60"
+            alt="Natural hair products"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="container relative z-10">
+          <div className="max-w-2xl">
+            <h1 className="text-4xl font-bold mb-4">Elevate Your Locs</h1>
+            <p className="text-xl mb-6">
               Expert loc creation, maintenance, and styling services for all stages of your loc journey.
             </p>
             <div className="flex gap-4">
-              <Button className="bg-amber-400 hover:bg-amber-500 text-black">Book Now</Button>
-              <Button variant="outline" className="text-white border-white hover:bg-white/10">
-                Learn More
+              <Button className="bg-amber-400 hover:bg-amber-500 text-black" asChild>
+                <Link href="/schedule?service=locs">Schedule Now</Link>
               </Button>
             </div>
           </div>
@@ -33,6 +41,15 @@ export default function LocsServicesPage() {
       <section className="py-16">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="block md:hidden rounded-lg overflow-hidden bg-gray-200 aspect-square">
+              <Image
+                src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=800&auto=format&fit=crop"
+                alt="Starter loc services"
+                width={800}
+                height={800}
+                className="w-full h-full object-cover"
+              />
+            </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">Transform Your Look with Our Expert Starter Loc Services</h2>
               <p className="text-muted-foreground mb-6">
@@ -56,17 +73,13 @@ export default function LocsServicesPage() {
                   </p>
                 </div>
               </div>
-
               <div className="flex gap-4">
-                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0">
-                  Book Now →
-                </Button>
-                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0">
-                  Learn More →
+                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0" asChild>
+                  <Link href="/schedule?service=locs">Schedule an Appointment Today →</Link>
                 </Button>
               </div>
             </div>
-            <div className="rounded-lg overflow-hidden bg-gray-200 aspect-square">
+            <div className="hidden md:block rounded-lg overflow-hidden bg-gray-200 aspect-square">
               <Image
                 src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=800&auto=format&fit=crop"
                 alt="Starter loc services"
@@ -95,11 +108,8 @@ export default function LocsServicesPage() {
                 and natural growth.
               </p>
               <div className="flex gap-4">
-                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0">
-                  Book Now →
-                </Button>
-                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0">
-                  Learn More →
+                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0" asChild>
+                  <Link href="/schedule?service=locs">Schedule an Appointment Today →</Link>
                 </Button>
               </div>
             </div>
@@ -120,6 +130,15 @@ export default function LocsServicesPage() {
       <section className="py-16">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="block md:hidden rounded-lg overflow-hidden bg-gray-200 aspect-square">
+              <Image
+                src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=800&auto=format&fit=crop"
+                alt="Loc styling services"
+                width={800}
+                height={800}
+                className="w-full h-full object-cover"
+              />
+            </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">Transform Your Look with Expert Loc Styling</h2>
               <p className="text-muted-foreground mb-6">
@@ -145,15 +164,12 @@ export default function LocsServicesPage() {
               </div>
 
               <div className="flex gap-4">
-                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0">
-                  Book Now →
-                </Button>
-                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0">
-                  View Gallery →
+                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0" asChild>
+                  <Link href="/schedule?service=locs">Schedule an Appointment Today →</Link>
                 </Button>
               </div>
             </div>
-            <div className="rounded-lg overflow-hidden bg-gray-200 aspect-square">
+            <div className="hidden md:block rounded-lg overflow-hidden bg-gray-200 aspect-square">
               <Image
                 src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=800&auto=format&fit=crop"
                 alt="Loc styling services"

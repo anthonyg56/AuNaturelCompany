@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Star, Sparkles, Scissors, Shield } from "lucide-react"
+import Link from "next/link"
 
 export const metadata = {
   title: "Natural Hair Services",
@@ -12,16 +13,25 @@ export default function NaturalHairServicesPage() {
   return (
     <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
-      <section className="py-20 bg-amber-50">
-        <div className="container">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl font-bold tracking-tight mb-4">Natural Hair Excellence</h1>
-            <p className="text-lg text-muted-foreground mb-6">
+      <section className="relative py-16 bg-gray-900 text-white">
+        <div className="absolute inset-0 z-0 opacity-30">
+          <Image
+            src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=1600&auto=format&fit=crop&q=60"
+            alt="Natural hair products"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="container relative z-10">
+          <div className="max-w-2xl">
+            <h1 className="text-4xl font-bold mb-4">Natural Hair Excellence</h1>
+            <p className="text-xl mb-6">
               Specialized care and styling for all natural hair textures, celebrating your hair's unique beauty.
             </p>
             <div className="flex gap-4">
-              <Button className="bg-amber-400 hover:bg-amber-500 text-black">Book Now</Button>
-              <Button variant="outline">Explore Services</Button>
+              <Button className="bg-amber-400 hover:bg-amber-500 text-black" asChild>
+                <Link href="/schedule?service=locs">Schedule Now</Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -57,15 +67,15 @@ export default function NaturalHairServicesPage() {
               </div>
 
               <div className="flex gap-4">
-                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0">
-                  Book Consultation →
+                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0" asChild>
+                  <Link href="/schedule?service=natural-hair">Book Consultation →</Link>
                 </Button>
-                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0">
-                  View Gallery →
+                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0" asChild>
+                  <Link href="/gallery">View Gallery →</Link>
                 </Button>
               </div>
             </div>
-            <div className="rounded-lg overflow-hidden bg-gray-200 aspect-square">
+            <div className="order-1 md:order-2 rounded-lg overflow-hidden bg-gray-200 aspect-square">
               <Image
                 src="https://images.unsplash.com/photo-1594359850729-e8953a201f85?q=80&w=800&auto=format&fit=crop"
                 alt="Natural hair styling"
@@ -112,11 +122,6 @@ export default function NaturalHairServicesPage() {
                 <div className="mb-4 rounded-full bg-amber-100 p-4">{service.icon}</div>
                 <h3 className="text-xl font-medium mb-2">{service.title}</h3>
                 <p className="text-muted-foreground mb-4">{service.description}</p>
-                <div className="mt-auto pt-4">
-                  <Button variant="link" className="text-amber-500 hover:text-amber-600">
-                    Learn More →
-                  </Button>
-                </div>
               </div>
             ))}
           </div>
@@ -127,7 +132,7 @@ export default function NaturalHairServicesPage() {
       <section className="py-16">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1 rounded-lg overflow-hidden bg-gray-200 aspect-video">
+            <div className="order-1 md:order-2 rounded-lg overflow-hidden bg-gray-200 aspect-video">
               <Image
                 src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=800&auto=format&fit=crop"
                 alt="Hair treatment services"
@@ -165,11 +170,11 @@ export default function NaturalHairServicesPage() {
               </div>
 
               <div className="flex gap-4">
-                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0">
-                  Book Treatment →
+                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0" asChild>
+                  <Link href="/schedule?service=natural-hair">Book Treatment →</Link>
                 </Button>
-                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0">
-                  Learn More →
+                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0" asChild>
+                  <Link href="/contact">Contact Us →</Link>
                 </Button>
               </div>
             </div>
@@ -200,8 +205,8 @@ export default function NaturalHairServicesPage() {
           </div>
 
           <div className="flex justify-center mt-8">
-            <Button variant="outline" className="border-amber-400 text-amber-600 hover:bg-amber-50">
-              View Full Gallery
+            <Button variant="outline" className="border-amber-400 text-amber-600 hover:bg-amber-50" asChild>
+              <Link href="/gallery">View Full Gallery</Link>
             </Button>
           </div>
         </div>
@@ -211,7 +216,7 @@ export default function NaturalHairServicesPage() {
       <section className="py-16">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="order-2 md:order-1">
               <h2 className="text-3xl font-bold mb-4">Natural Hair Care Education</h2>
               <p className="text-muted-foreground mb-6">
                 We believe in empowering our clients with knowledge about their natural hair. Our stylists provide
@@ -239,9 +244,11 @@ export default function NaturalHairServicesPage() {
                 </div>
               </div>
 
-              <Button className="bg-amber-400 hover:bg-amber-500 text-black">Schedule Consultation</Button>
+              <Button className="bg-amber-400 hover:bg-amber-500 text-black" asChild>
+                <Link href="/schedule?service=natural-hair">Schedule Consultation</Link>
+              </Button>
             </div>
-            <div className="rounded-lg overflow-hidden bg-gray-200 aspect-square">
+            <div className="order-1 md:order-2 rounded-lg overflow-hidden bg-gray-200 aspect-square">
               <Image
                 src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=800&auto=format&fit=crop"
                 alt="Hair care education"
@@ -296,8 +303,12 @@ export default function NaturalHairServicesPage() {
               stylists.
             </p>
             <div className="flex gap-4">
-              <Button className="bg-amber-400 hover:bg-amber-500 text-black">Book Now</Button>
-              <Button variant="outline">Contact Us</Button>
+              <Button className="bg-amber-400 hover:bg-amber-500 text-black" asChild>
+                <Link href="/schedule?service=natural-hair">Book Now</Link>
+              </Button>
+              <Button variant="outline" asChild>
+                <Link href="/contact">Contact Us</Link>
+              </Button>
             </div>
           </div>
         </div>

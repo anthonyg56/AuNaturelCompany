@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Star } from "lucide-react"
+import Link from "next/link"
 
 export const metadata = {
   title: "Haircut Services",
@@ -12,16 +13,25 @@ export default function BarberServicesPage() {
   return (
     <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
-      <section className="py-16 bg-gray-100">
-        <div className="container">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl font-bold tracking-tight mb-4">Expert Barbering Services</h1>
-            <p className="text-lg text-muted-foreground mb-6">
+      <section className="relative py-16 bg-gray-900 text-white">
+        <div className="absolute inset-0 z-0 opacity-30">
+          <Image
+            src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=1600&auto=format&fit=crop&q=60"
+            alt="Natural hair products"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="container relative z-10">
+          <div className="max-w-2xl">
+            <h1 className="text-4xl font-bold mb-4">Expert Barber Services</h1>
+            <p className="text-xl mb-6">
               Experience precision haircuts, custom lineups, and expert styling from our team of skilled barbers.
             </p>
             <div className="flex gap-4">
-              <Button className="bg-amber-400 hover:bg-amber-500 text-black">Book Now</Button>
-              <Button variant="outline">Learn More</Button>
+              <Button className="bg-amber-400 hover:bg-amber-500 text-black" asChild>
+                <Link href="/schedule?service=locs">Schedule Now</Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -31,6 +41,15 @@ export default function BarberServicesPage() {
       <section className="py-16">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+            <div className="block md:hidden rounded-lg overflow-hidden bg-gray-200 aspect-square">
+              <Image
+                src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=800&auto=format&fit=crop"
+                alt="Barbering services"
+                width={800}
+                height={800}
+                className="w-full h-full object-cover"
+              />
+            </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">Expert Barbering Services Tailored for You</h2>
               <p className="text-muted-foreground mb-6">
@@ -52,15 +71,15 @@ export default function BarberServicesPage() {
                 </div>
               </div>
               <div className="flex gap-4">
-                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0">
-                  Book Now →
+                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0" asChild>
+                  <Link href="/schedule?service=haircut">Book Now →</Link>
                 </Button>
-                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0">
-                  Contact Us →
+                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0" asChild>
+                  <Link href="/contact">Contact Us →</Link>
                 </Button>
               </div>
             </div>
-            <div className="rounded-lg overflow-hidden bg-gray-200 aspect-square">
+            <div className="hidden md:block rounded-lg overflow-hidden bg-gray-200 aspect-square">
               <Image
                 src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=800&auto=format&fit=crop"
                 alt="Barbering services"
@@ -121,6 +140,15 @@ export default function BarberServicesPage() {
       <section className="py-16 bg-gray-50">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="block md:hidden rounded-lg overflow-hidden bg-gray-200 aspect-video">
+              <Image
+                src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=800&auto=format&fit=crop"
+                alt="Barbering experience"
+                width={800}
+                height={450}
+                className="w-full h-full object-cover"
+              />
+            </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">Experience Exceptional Barbering at Our Salon</h2>
               <p className="text-muted-foreground mb-6">
@@ -153,7 +181,7 @@ export default function BarberServicesPage() {
                 </Button>
               </div>
             </div>
-            <div className="rounded-lg overflow-hidden bg-gray-200 aspect-video">
+            <div className="hidden md:block rounded-lg overflow-hidden bg-gray-200 aspect-video">
               <Image
                 src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=800&auto=format&fit=crop"
                 alt="Barbering experience"

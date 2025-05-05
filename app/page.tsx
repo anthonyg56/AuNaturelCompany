@@ -1,26 +1,16 @@
-"use client"
-
-import { useState } from "react"
-import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Separator } from "@/components/ui/separator"
-import { Instagram, Facebook, Twitter, Menu, ArrowRight, Box } from "lucide-react"
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu"
-import { MobileNav } from "@/components/layouts/mobile-nav"
+import { Instagram, Facebook, Twitter, ArrowRight } from "lucide-react"
 import { TestimonialCarousel } from "@/components/testimonial-carousel"
 import QueriedImage from "@/components/queried-image"
 import { AccentText } from "@/components/accent-text"
 
+export const metadata = {
+  title: "Au Natural Company",
+  description: "Au Natural Company is a natural hair salon in Indianapolis, Indiana.",
+}
+
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false)
 
   const testimonials = [
     {
@@ -61,7 +51,9 @@ export default function Home() {
                   <AccentText variant="secondary">exceptional service</AccentText> and
                   care for your hair journey.
                 </p>
-                <Button className="bg-au-primary hover:bg-au-primary-dark text-black">Book Now</Button>
+                <Button className="bg-au-primary hover:bg-au-primary-dark text-black" asChild>
+                  <Link href="/booking">Book Now</Link>
+                </Button>
               </div>
               <div className="rounded-lg overflow-hidden bg-muted aspect-square">
                 <QueriedImage
@@ -77,7 +69,7 @@ export default function Home() {
         </section>
 
         {/* Excellence Section */}
-        <section className="py-32 bg-slate-50">
+        <section className="py-16 md:py-32 bg-slate-50">
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="rounded-lg overflow-hidden bg-muted aspect-square">
@@ -103,9 +95,10 @@ export default function Home() {
                   your loc journey or maintaining your style, we're here to help.
                 </p>
                 <div className="flex gap-4">
-                  <Button variant="outline">Learn More</Button>
-                  <Button variant="ghost" className="text-amber-500 hover:text-amber-600 hover:bg-amber-50">
-                    Services
+                  <Button variant="outline" className="text-amber-500 hover:text-amber-600 hover:bg-amber-50" asChild>
+                    <Link href="/services">
+                      View Services
+                    </Link>
                   </Button>
                 </div>
               </div>
@@ -114,7 +107,7 @@ export default function Home() {
         </section>
 
         {/* Services Section */}
-        <section className="py-32">
+        <section className="py-16 md:py-32">
           <div className="container">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold">
@@ -161,7 +154,7 @@ export default function Home() {
                     <p className="text-sm text-muted-foreground mb-4">Check out our courses starting at $50</p>
                   </div>
                   <Link
-                    href="/about"
+                    href="/courses"
                     className="text-sm font-medium flex items-center hover:text-amber-600 transition-colors"
                   >
                     Learn More <ArrowRight className="h-4 w-4 ml-1" />
@@ -180,10 +173,10 @@ export default function Home() {
                 <div className="w-full md:w-1/2 p-6 flex flex-col justify-between">
                   <div>
                     <h3 className="font-medium text-lg mb-1">Natural Barbering and Styling Services</h3>
-                    <p className="text-sm text-muted-foreground mb-4">Cuts and Lineups starting at $30.</p>
+                    <p className="text-sm text-muted-foreground mb-4">Starting as low as $30.</p>
                   </div>
                   <Link
-                    href="/services/haircuts"
+                    href="/services"
                     className="text-sm font-medium flex items-center hover:text-amber-600 transition-colors"
                   >
                     Explore <ArrowRight className="h-4 w-4 ml-1" />
@@ -195,7 +188,7 @@ export default function Home() {
         </section>
 
         {/* Expert Team Section */}
-        <section className="py-32 bg-slate-50">
+        <section className="py-16 md:py-32 bg-slate-50">
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="space-y-6">
@@ -221,11 +214,18 @@ export default function Home() {
                 />
               </div>
             </div>
+            <div className="mt-12 text-center">
+              <Button variant="outline" className="text-amber-500 hover:text-amber-600 hover:bg-amber-50" asChild>
+                <Link href="/about#team">
+                  View All Team Members
+                </Link>
+              </Button>
+            </div>
           </div>
         </section>
 
         {/* Team Section */}
-        <section className="py-32">
+        <section className="py-16 md:py-32">
           <div className="container grid gap-y-9">
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold">
@@ -306,9 +306,18 @@ export default function Home() {
         <TestimonialCarousel testimonials={testimonials} />
 
         {/* CTA Section */}
-        <section className="py-32">
+        <section className="py-16 md:py-32">
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div className="block md:hidden rounded-lg overflow-hidden bg-muted aspect-video">
+                <QueriedImage
+                  alt="Our salon"
+                  width={600}
+                  height={400}
+                  className="object-cover w-full h-full"
+                  query="modern-hair-salon-interior"
+                />
+              </div>
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold">
                   Transform Your <AccentText variant="primary" shade="base">Hair</AccentText> Today
@@ -319,10 +328,10 @@ export default function Home() {
                   start your loc journey.
                 </p>
                 <Button className="bg-au-primary hover:bg-au-primary-dark text-black" asChild>
-                  <Link href="/services">Book Now</Link>
+                  <Link href="/booking">Book Now</Link>
                 </Button>
               </div>
-              <div className="rounded-lg overflow-hidden bg-muted aspect-video">
+              <div className="hidden md:block rounded-lg overflow-hidden bg-muted aspect-video">
                 <QueriedImage
                   alt="Our salon"
                   width={600}

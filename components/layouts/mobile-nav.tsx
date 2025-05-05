@@ -51,6 +51,15 @@ export function MobileNav({ isOpen, onOpenChange }: MobileNavProps) {
                       <ul className="pl-4 space-y-2">
                         <li>
                           <Link
+                            href="/services"
+                            className="block py-1.5 text-sm"
+                            onClick={() => onOpenChange(false)}
+                          >
+                            All
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
                             href="/services/locs"
                             className="block py-1.5 text-sm"
                             onClick={() => onOpenChange(false)}
@@ -60,11 +69,11 @@ export function MobileNav({ isOpen, onOpenChange }: MobileNavProps) {
                         </li>
                         <li>
                           <Link
-                            href="/services/barbering"
+                            href="/services/haircuts"
                             className="block py-1.5 text-sm"
                             onClick={() => onOpenChange(false)}
                           >
-                            Barbering
+                            Haircuts
                           </Link>
                         </li>
                         <li>
@@ -74,15 +83,6 @@ export function MobileNav({ isOpen, onOpenChange }: MobileNavProps) {
                             onClick={() => onOpenChange(false)}
                           >
                             Natural Hair
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/services/starter"
-                            className="block py-1.5 text-sm"
-                            onClick={() => onOpenChange(false)}
-                          >
-                            Starter
                           </Link>
                         </li>
                       </ul>

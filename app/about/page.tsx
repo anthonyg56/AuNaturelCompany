@@ -27,10 +27,10 @@ export default function AboutPage() {
               </p>
               <div className="flex gap-4">
                 <Button className="bg-amber-400 hover:bg-amber-500 text-black" asChild>
-                  <Link href="/services">Learn More</Link>
+                  <Link href="/booking">Book Now</Link>
                 </Button>
                 <Button variant="outline" asChild>
-                  <Link href="/schedule">Book Us</Link>
+                  <Link href="/services">Our Services</Link>
                 </Button>
               </div>
             </div>
@@ -50,14 +50,6 @@ export default function AboutPage() {
                 natural beauty and are committed to helping each client express themselves through high-quality,
                 low-fuss, stunning locks. Commitment to excellence is what we stand by.
               </p>
-              <div className="flex gap-4">
-                <Button variant="ghost" className="text-amber-500 hover:text-amber-600 hover:bg-amber-50 px-0" asChild>
-                  <Link href="/services">Learn More</Link>
-                </Button>
-                <Button variant="ghost" className="text-amber-500 hover:text-amber-600 hover:bg-amber-50 px-0" asChild>
-                  <Link href="/schedule">Book Us</Link>
-                </Button>
-              </div>
             </div>
             <div className="rounded-lg overflow-hidden bg-muted aspect-square">
               <Image
@@ -73,7 +65,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="py-16">
+      <section className="py-16" id="team">
         <div className="container">
           <div className="mb-12">
             <p className="text-sm text-amber-500">Expertise</p>
