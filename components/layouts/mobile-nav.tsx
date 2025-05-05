@@ -103,12 +103,17 @@ export function MobileNav({ isOpen, onOpenChange }: MobileNavProps) {
             </ul>
           </nav>
           <div className="mt-auto pt-4 pb-6 space-y-4">
-            <Button variant="outline" className="w-full" onClick={() => onOpenChange(false)}>
-              <Phone className="h-4 w-4 mr-2" />
-              Contact Now
+            <Button variant="outline" className="w-full" onClick={() => onOpenChange(false)} asChild>
+              <Link href="/contact" className="flex items-center justify-center w-full">
+                <Phone className="h-4 w-4 mr-2" />
+                Contact Now
+              </Link>
             </Button>
             <Button className="w-full bg-amber-400 hover:bg-amber-500 text-black" onClick={() => onOpenChange(false)}>
-              Book Now
+              <Link href="/booking" className="flex items-center justify-center w-full">
+                <Phone className="h-4 w-4 mr-2" />
+                Book Now
+              </Link>
             </Button>
           </div>
         </div>
