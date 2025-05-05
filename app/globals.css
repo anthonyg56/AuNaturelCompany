@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 47 95% 50%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 47 95% 50%;
+    --radius: 0.5rem;
+
+    /* Primary Colors (Golden Fizz) */
+    --au-primary-lightest: 55 82% 96%;    /* #FEFCEC */
+    --au-primary-lighter: 56 89% 92%;     /* #FDFAD9 */
+    --au-primary-light: 56 89% 92%;       /* #FDFAD9 */
+    --au-primary: 54 91% 62%;             /* #F8E744 */
+    --au-primary-dark: 54 57% 49%;        /* #C6B836 */
+    --au-primary-darker: 54 57% 25%;      /* #635C1B */
+    --au-primary-darkest: 54 57% 18%;     /* #4A4514 */
+
+    /* Secondary Colors (Olive Drab) */
+    --au-secondary-lightest: 100 43% 94%; /* #EDF5E9 */
+    --au-secondary-lighter: 100 43% 87%;  /* #DCECD3 */
+    --au-secondary-light: 100 35% 57%;    /* #86BD66 */
+    --au-secondary: 112 62% 38%;          /* #3A9D23 */
+    --au-secondary-dark: 112 62% 31%;     /* #42801D */
+    --au-secondary-darker: 112 62% 15%;   /* #21400E */
+    --au-secondary-darkest: 112 62% 11%;  /* #18300B */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 47 95% 50%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 47 95% 50%;
+
+    /* Primary Colors (Golden Fizz) */
+    --au-primary-lightest: 54 57% 18%;    /* #4A4514 */
+    --au-primary-lighter: 54 57% 25%;     /* #635C1B */
+    --au-primary-light: 54 57% 49%;       /* #C6B836 */
+    --au-primary: 54 91% 62%;             /* #F8E744 */
+    --au-primary-dark: 56 89% 92%;        /* #FDFAD9 */
+    --au-primary-darker: 56 89% 92%;      /* #FDFAD9 */
+    --au-primary-darkest: 55 82% 96%;     /* #FEFCEC */
+
+    /* Secondary Colors (Olive Drab) */
+    --au-secondary-lightest: 112 62% 11%; /* #18300B */
+    --au-secondary-lighter: 112 62% 15%;  /* #21400E */
+    --au-secondary-light: 112 62% 31%;    /* #42801D */
+    --au-secondary: 112 62% 38%;          /* #3A9D23 */
+    --au-secondary-dark: 100 35% 57%;     /* #86BD66 */
+    --au-secondary-darker: 100 43% 87%;   /* #DCECD3 */
+    --au-secondary-darkest: 100 43% 94%;  /* #EDF5E9 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
