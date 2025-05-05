@@ -27,6 +27,7 @@ export default function Navbar() {
     return null
   }
 
+
   return (
     <header className="border-b sticky top-0 bg-background z-50">
       <div className="container flex h-16 items-center justify-between">
