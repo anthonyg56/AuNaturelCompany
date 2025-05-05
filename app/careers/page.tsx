@@ -289,7 +289,7 @@ export default function CareersPage() {
               Build your career with Au Natural Company. We're looking for talented individuals who are passionate about
               natural hair care and providing exceptional client experiences.
             </p>
-            <Button className="bg-amber-400 hover:bg-amber-500 text-black">View Open Positions</Button>
+            <Button className="bg-primary hover:bg-primary text-black">View Open Positions</Button>
           </div>
         </div>
       </section>
@@ -307,7 +307,7 @@ export default function CareersPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-6 border rounded-lg">
-              <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -318,7 +318,7 @@ export default function CareersPage() {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="text-amber-600"
+                  className="text-primary"
                 >
                   <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                   <circle cx="9" cy="7" r="4"></circle>
@@ -333,7 +333,7 @@ export default function CareersPage() {
             </div>
 
             <div className="text-center p-6 border rounded-lg">
-              <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -344,7 +344,7 @@ export default function CareersPage() {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="text-amber-600"
+                  className="text-primary"
                 >
                   <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
                   <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
@@ -357,7 +357,7 @@ export default function CareersPage() {
             </div>
 
             <div className="text-center p-6 border rounded-lg">
-              <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -368,7 +368,7 @@ export default function CareersPage() {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="text-amber-600"
+                  className="text-primary"
                 >
                   <path d="M12 20h9"></path>
                   <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
@@ -396,7 +396,7 @@ export default function CareersPage() {
 
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="mt-1 text-amber-500">
+                  <div className="mt-1 text-primary">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
@@ -421,7 +421,7 @@ export default function CareersPage() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="mt-1 text-amber-500">
+                  <div className="mt-1 text-primary">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
@@ -446,7 +446,7 @@ export default function CareersPage() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="mt-1 text-amber-500">
+                  <div className="mt-1 text-primary">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
@@ -471,7 +471,7 @@ export default function CareersPage() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="mt-1 text-amber-500">
+                  <div className="mt-1 text-primary">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
@@ -496,7 +496,7 @@ export default function CareersPage() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="mt-1 text-amber-500">
+                  <div className="mt-1 text-primary">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
@@ -521,7 +521,7 @@ export default function CareersPage() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="mt-1 text-amber-500">
+                  <div className="mt-1 text-primary">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
@@ -692,7 +692,7 @@ export default function CareersPage() {
               </div>
             ) : (
               filteredJobs.map((job) => (
-                <div key={job.id} className="border rounded-lg p-6 hover:border-amber-300 transition-colors">
+                <div key={job.id} className="border rounded-lg p-6 hover:border-primary transition-colors">
                   <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                     <h3 className="text-xl font-bold">{job.title}</h3>
                     <div className="flex flex-wrap gap-2 mt-2 md:mt-0">
@@ -736,7 +736,7 @@ export default function CareersPage() {
                       <span className="font-medium">{job.salary}</span>
                     </div>
                     <Link href={`/careers/apply/${job.id}`}>
-                      <Button className="bg-amber-400 hover:bg-amber-500 text-black">Apply Now</Button>
+                      <Button className="bg-primary hover:bg-primary text-black">Apply Now</Button>
                     </Link>
                   </div>
                 </div>
@@ -751,7 +751,7 @@ export default function CareersPage() {
                 <Button variant="outline" size="sm" disabled>
                   Previous
                 </Button>
-                <Button variant="outline" size="sm" className="bg-amber-400 text-black">
+                <Button variant="outline" size="sm" className="bg-primary text-black">
                   1
                 </Button>
                 <Button variant="outline" size="sm">
@@ -781,7 +781,7 @@ export default function CareersPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 text-black font-bold">
+              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-black font-bold">
                 1
               </div>
               <h3 className="font-bold mb-2">Apply Online</h3>
@@ -791,7 +791,7 @@ export default function CareersPage() {
             </div>
 
             <div className="text-center">
-              <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 text-black font-bold">
+              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-black font-bold">
                 2
               </div>
               <h3 className="font-bold mb-2">Initial Review</h3>
@@ -801,7 +801,7 @@ export default function CareersPage() {
             </div>
 
             <div className="text-center">
-              <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 text-black font-bold">
+              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-black font-bold">
                 3
               </div>
               <h3 className="font-bold mb-2">Interview & Skills Demo</h3>
@@ -811,7 +811,7 @@ export default function CareersPage() {
             </div>
 
             <div className="text-center">
-              <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 text-black font-bold">
+              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-black font-bold">
                 4
               </div>
               <h3 className="font-bold mb-2">Welcome Aboard</h3>
@@ -832,7 +832,7 @@ export default function CareersPage() {
             positions and apply today!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-amber-400 hover:bg-amber-500 text-black">View Open Positions</Button>
+            <Button className="bg-primary hover:bg-primary text-black">View Open Positions</Button>
             <Button variant="outline">Learn More About Us</Button>
           </div>
         </div>

@@ -127,15 +127,15 @@ export default function ProductPage({ params }: { params: { id: string } }) {
       <div className="bg-gray-50 py-3">
         <div className="container">
           <div className="flex items-center text-sm text-muted-foreground">
-            <Link href="/" className="hover:text-amber-600">
+            <Link href="/" className="hover:text-primary">
               Home
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
-            <Link href="/shop" className="hover:text-amber-600">
+            <Link href="/shop" className="hover:text-primary">
               Shop
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
-            <Link href={`/shop/category/${product.category}`} className="hover:text-amber-600">
+            <Link href={`/shop/category/${product.category}`} className="hover:text-primary">
               {product.category.charAt(0).toUpperCase() + product.category.slice(1)}
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
@@ -153,12 +153,12 @@ export default function ProductPage({ params }: { params: { id: string } }) {
               <div className="aspect-square relative rounded-lg overflow-hidden border">
                 <Image src={selectedImage || "/placeholder.svg"} alt={product.name} fill className="object-cover" />
                 {product.bestSeller && (
-                  <Badge className="absolute top-4 left-4 bg-amber-500 hover:bg-amber-600">Best Seller</Badge>
+                  <Badge className="absolute top-4 left-4 bg-primary hover:bg-primary">Best Seller</Badge>
                 )}
               </div>
               <div className="flex gap-4">
                 <button
-                  className={`w-20 h-20 rounded-md overflow-hidden border ${selectedImage === product.image ? "border-amber-500" : "border-gray-200"
+                  className={`w-20 h-20 rounded-md overflow-hidden border ${selectedImage === product.image ? "border-primary" : "border-gray-200"
                     }`}
                   onClick={() => setSelectedImage(product.image)}
                 >
@@ -169,7 +169,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                 {product.additionalImages.map((img, index) => (
                   <button
                     key={index}
-                    className={`w-20 h-20 rounded-md overflow-hidden border ${selectedImage === img ? "border-amber-500" : "border-gray-200"
+                    className={`w-20 h-20 rounded-md overflow-hidden border ${selectedImage === img ? "border-primary" : "border-gray-200"
                       }`}
                     onClick={() => setSelectedImage(img)}
                   >
@@ -190,7 +190,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
             <div>
               <h1 className="text-3xl font-bold mb-2">{product.name}</h1>
               <div className="flex items-center mb-4">
-                <div className="flex text-amber-400">
+                <div className="flex text-primary">
                   {[...Array(5)].map((_, i) => (
                     <Star
                       key={i}
@@ -221,7 +221,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                <Button className="bg-amber-400 hover:bg-amber-500 text-black flex-1">
+                <Button className="bg-primary hover:bg-primary text-black flex-1">
                   <ShoppingCart className="h-5 w-5 mr-2" /> Add to Cart
                 </Button>
                 <Button variant="outline" className="flex-1">
@@ -231,7 +231,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
 
               <div className="bg-gray-50 p-4 rounded-lg mb-6">
                 <div className="flex items-start gap-3 mb-2">
-                  <Truck className="h-5 w-5 text-amber-500 mt-0.5" />
+                  <Truck className="h-5 w-5 text-primary mt-0.5" />
                   <div>
                     <p className="font-medium">Free shipping</p>
                     <p className="text-sm text-muted-foreground">On orders over $50</p>
@@ -268,25 +268,25 @@ export default function ProductPage({ params }: { params: { id: string } }) {
             <TabsList className="w-full justify-start border-b rounded-none bg-transparent mb-6">
               <TabsTrigger
                 value="details"
-                className="data-[state=active]:border-b-2 data-[state=active]:border-amber-500 rounded-none"
+                className="data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none"
               >
                 Details
               </TabsTrigger>
               <TabsTrigger
                 value="how-to-use"
-                className="data-[state=active]:border-b-2 data-[state=active]:border-amber-500 rounded-none"
+                className="data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none"
               >
                 How to Use
               </TabsTrigger>
               <TabsTrigger
                 value="ingredients"
-                className="data-[state=active]:border-b-2 data-[state=active]:border-amber-500 rounded-none"
+                className="data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none"
               >
                 Ingredients
               </TabsTrigger>
               <TabsTrigger
                 value="reviews"
-                className="data-[state=active]:border-b-2 data-[state=active]:border-amber-500 rounded-none"
+                className="data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none"
               >
                 Reviews ({product.reviews.length})
               </TabsTrigger>
@@ -330,7 +330,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                         <span className="text-sm text-muted-foreground">{review.date}</span>
                       </div>
                       <div className="flex items-center mb-2">
-                        <div className="flex text-amber-400">
+                        <div className="flex text-primary">
                           {[...Array(5)].map((_, i) => (
                             <Star key={i} className={`h-4 w-4 ${i < review.rating ? "fill-current" : "fill-none"}`} />
                           ))}
@@ -364,7 +364,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                     />
                   </div>
                   <div className="p-4">
-                    <h3 className="font-medium text-sm mb-1 group-hover:text-amber-600 transition-colors">
+                    <h3 className="font-medium text-sm mb-1 group-hover:text-primary transition-colors">
                       {relatedProduct.name}
                     </h3>
                     <div className="flex items-center">
@@ -381,7 +381,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
       {/* Back to Shop */}
       <section className="py-6 bg-gray-50">
         <div className="container">
-          <Link href="/shop" className="inline-flex items-center text-amber-600 hover:text-amber-700">
+          <Link href="/shop" className="inline-flex items-center text-primary hover:text-primary">
             <ArrowLeft className="h-4 w-4 mr-2" /> Back to Shop
           </Link>
         </div>

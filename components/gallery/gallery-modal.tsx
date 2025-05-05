@@ -111,7 +111,7 @@ export default function GalleryModal({ images, currentIndex, isOpen, onClose, on
               {currentImage.categories?.map((category) => (
                 <span
                   key={category}
-                  className="text-xs bg-amber-500/80 text-black px-2 py-1 rounded-full"
+                  className="text-xs bg-primary/80 text-black px-2 py-1 rounded-full"
                 >
                   {category.replace('-', ' ')}
                 </span>

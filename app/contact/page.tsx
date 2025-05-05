@@ -50,7 +50,7 @@ export default function ContactPage() {
       <section className="py-12">
         <div className="container">
           <div className="text-center max-w-2xl mx-auto mb-8">
-            <p className="text-sm text-amber-500 mb-2">Contact</p>
+            <p className="text-sm text-primary mb-2">Contact</p>
             <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
             <p className="text-muted-foreground">
               We're here to help and answer any questions you might have. We look forward to hearing from you.
@@ -117,14 +117,14 @@ export default function ContactPage() {
               <Checkbox id="terms" required />
               <Label htmlFor="terms" className="text-sm">
                 I agree to the{" "}
-                <Link href="/terms" className="text-amber-500 hover:underline">
+                <Link href="/terms" className="text-primary hover:underline">
                   terms of service
                 </Link>
               </Label>
             </div>
 
             <div className="flex justify-end">
-              <Button type="submit" className="bg-amber-400 hover:bg-amber-500 text-black">
+              <Button type="submit" className="bg-primary hover:bg-primary text-black">
                 Submit
               </Button>
             </div>
@@ -136,7 +136,7 @@ export default function ContactPage() {
       <section className="py-32 bg-gray-50">
         <div className="container">
           <div className="text-center mb-8">
-            <p className="text-sm text-amber-500 mb-2">Support</p>
+            <p className="text-sm text-primary mb-2">Support</p>
             <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
             <p className="text-muted-foreground">We're here to assist you with any questions.</p>
           </div>
@@ -144,39 +144,39 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="flex flex-col items-center text-center">
               <div className="bg-white p-4 rounded-full mb-4 shadow-sm">
-                <Mail className="h-6 w-6 text-amber-500" />
+                <Mail className="h-6 w-6 text-primary" />
               </div>
               <h3 className="font-medium mb-2">Email</h3>
               <p className="text-sm text-muted-foreground mb-2">
                 Reach out via email for any inquiries or appointment requests.
               </p>
-              <a href="mailto:info@aunaturalcompany.com" className="text-amber-500 hover:underline">
+              <a href="mailto:info@aunaturalcompany.com" className="text-primary hover:underline">
                 info@aunaturalcompany.com
               </a>
             </div>
 
             <div className="flex flex-col items-center text-center">
               <div className="bg-white p-4 rounded-full mb-4 shadow-sm">
-                <Phone className="h-6 w-6 text-amber-500" />
+                <Phone className="h-6 w-6 text-primary" />
               </div>
               <h3 className="font-medium mb-2">Phone</h3>
               <p className="text-sm text-muted-foreground mb-2">
                 Call us for immediate assistance or booking inquiries.
               </p>
-              <a href="tel:+13179143125" className="text-amber-500 hover:underline">
+              <a href="tel:+13179143125" className="text-primary hover:underline">
                 (317) 914-3125
               </a>
             </div>
 
             <div className="flex flex-col items-center text-center">
               <div className="bg-white p-4 rounded-full mb-4 shadow-sm">
-                <MapPin className="h-6 w-6 text-amber-500" />
+                <MapPin className="h-6 w-6 text-primary" />
               </div>
               <h3 className="font-medium mb-2">Office</h3>
               <p className="text-sm text-muted-foreground mb-2">
                 Visit our location for in-person consultations and services.
               </p>
-              <address className="not-italic text-amber-500">2605 E 62nd St, Suite 2001, Indianapolis, IN 46220</address>
+              <address className="not-italic text-primary">2605 E 62nd St, Suite 2001, Indianapolis, IN 46220</address>
             </div>
           </div>
         </div>
@@ -186,7 +186,7 @@ export default function ContactPage() {
       <section className="py-12">
         <div className="container">
           <div className="text-center mb-8">
-            <p className="text-sm text-amber-500 mb-2">Location</p>
+            <p className="text-sm text-primary mb-2">Location</p>
             <h2 className="text-3xl font-bold mb-4">Come Visit Us</h2>
             <p className="text-muted-foreground">We're located north east of Indianapolis at 2605 E 62nd St, Suite 2001, Indianapolis, IN 46220.</p>
           </div>

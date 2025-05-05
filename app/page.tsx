@@ -95,7 +95,7 @@ export default function Home() {
                   your loc journey or maintaining your style, we're here to help.
                 </p>
                 <div className="flex gap-4">
-                  <Button variant="outline" className="text-amber-500 hover:text-amber-600 hover:bg-amber-50" asChild>
+                  <Button variant="outline" className="text-primary hover:text-primary hover:bg-primary" asChild>
                     <Link href="/services">
                       View Services
                     </Link>
@@ -133,7 +133,7 @@ export default function Home() {
                   </div>
                   <Link
                     href="/gallery"
-                    className="text-sm font-medium flex items-center hover:text-amber-600 transition-colors"
+                    className="text-sm font-medium flex items-center hover:text-primary transition-colors"
                   >
                     View <ArrowRight className="h-4 w-4 ml-1" />
                   </Link>
@@ -155,7 +155,7 @@ export default function Home() {
                   </div>
                   <Link
                     href="/courses"
-                    className="text-sm font-medium flex items-center hover:text-amber-600 transition-colors"
+                    className="text-sm font-medium flex items-center hover:text-primary transition-colors"
                   >
                     Learn More <ArrowRight className="h-4 w-4 ml-1" />
                   </Link>
@@ -177,7 +177,7 @@ export default function Home() {
                   </div>
                   <Link
                     href="/services"
-                    className="text-sm font-medium flex items-center hover:text-amber-600 transition-colors"
+                    className="text-sm font-medium flex items-center hover:text-primary transition-colors"
                   >
                     Explore <ArrowRight className="h-4 w-4 ml-1" />
                   </Link>
@@ -215,7 +215,7 @@ export default function Home() {
               </div>
             </div>
             <div className="mt-12 text-center">
-              <Button variant="outline" className="text-amber-500 hover:text-amber-600 hover:bg-amber-50" asChild>
+              <Button variant="outline" className="text-primary hover:text-primary hover:bg-primary" asChild>
                 <Link href="/about#team">
                   View All Team Members
                 </Link>
@@ -271,16 +271,16 @@ export default function Home() {
                     />
                   </div>
                   <h3 className="font-medium text-lg">{member.name}</h3>
-                  <p className="text-sm text-amber-500">{member.role}</p>
+                  <p className="text-sm text-primary">{member.role}</p>
                   <p className="text-xs mt-2 mb-4 text-slate-600">{member.bio}</p>
                   <div className="flex gap-3 mb-4">
-                    <button className="text-amber-400 hover:text-amber-600 transition-colors">
+                    <button className="text-primary hover:text-primary transition-colors">
                       <Instagram className="h-5 w-5" />
                     </button>
-                    <button className="text-amber-400 hover:text-amber-600 transition-colors">
+                    <button className="text-primary hover:text-primary transition-colors">
                       <Facebook className="h-5 w-5" />
                     </button>
-                    <button className="text-amber-400 hover:text-amber-600 transition-colors">
+                    <button className="text-primary hover:text-primary transition-colors">
                       <Twitter className="h-5 w-5" />
                     </button>
                   </div>
@@ -292,7 +292,7 @@ export default function Home() {
             </div>
             <div className="mt-16 text-center">
               <h3 className="text-xl font-bold mb-2">
-                We're <span className="text-amber-500">hiring</span>!
+                We're <span className="text-primary">hiring</span>!
               </h3>
               <p className="text-muted-foreground mb-4">If you're passionate about natural hair, join our team!</p>
               <Button variant="outline" asChild>

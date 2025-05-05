@@ -27,7 +27,7 @@ export default function CoursesComingSoon() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
-                <div className="inline-block px-4 py-1.5 bg-amber-100 text-amber-700 rounded-full text-sm font-medium mb-2">
+                <div className="inline-block px-4 py-1.5 bg-primary text-primary rounded-full text-sm font-medium mb-2">
                   Coming Soon
                 </div>
                 <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
@@ -102,10 +102,10 @@ export default function CoursesComingSoon() {
                   <div className="p-6">
                     <div className="flex justify-between items-start mb-4">
                       <h3 className="font-medium text-lg">{course.title}</h3>
-                      <span className="text-amber-500 font-medium">{course.price}</span>
+                      <span className="text-primary font-medium">{course.price}</span>
                     </div>
                     <p className="text-sm text-muted-foreground mb-6">{course.description}</p>
-                    <div className="inline-block px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-medium">
+                    <div className="inline-block px-3 py-1 bg-primary text-primary rounded-full text-xs font-medium">
                       Coming Soon
                     </div>
                   </div>
@@ -157,7 +157,7 @@ export default function CoursesComingSoon() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-24 bg-amber-50">
+        <section className="py-16 md:py-24 bg-primary">
           <div className="container text-center max-w-3xl">
             <h2 className="text-3xl font-bold mb-4">
               Can't Wait for Our <AccentText variant="primary" shade="base">Courses</AccentText>?

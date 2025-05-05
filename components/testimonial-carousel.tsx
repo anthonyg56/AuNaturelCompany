@@ -68,7 +68,7 @@ export function TestimonialCarousel({ testimonials }: TestimonialCarouselProps) 
               key={index}
               variant="ghost"
               size="sm"
-              className={`w-2 h-2 p-0 rounded-full ${index === current ? "bg-amber-400" : "bg-gray-300"}`}
+              className={`w-2 h-2 p-0 rounded-full ${index === current ? "bg-primary" : "bg-gray-300"}`}
               onClick={() => {
                 setAutoplay(false)
                 setCurrent(index)

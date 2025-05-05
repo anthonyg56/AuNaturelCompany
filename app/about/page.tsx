@@ -19,14 +19,14 @@ export default function AboutPage() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
             <div className="space-y-6">
-              <p className="text-sm text-amber-500">About</p>
+              <p className="text-sm text-primary">About</p>
               <h1 className="text-4xl font-bold tracking-tight">Your Natural Beauty</h1>
               <p className="text-muted-foreground">
                 At Au Natural Company, we are dedicated to providing exceptional natural hair services in Indianapolis.
                 Our mission is to enhance your natural beauty through expert craftsmanship and personalized care.
               </p>
               <div className="flex gap-4">
-                <Button className="bg-amber-400 hover:bg-amber-500 text-black" asChild>
+                <Button className="bg-primary hover:bg-primary text-black" asChild>
                   <Link href="/booking">Book Now</Link>
                 </Button>
                 <Button variant="outline" asChild>
@@ -43,7 +43,7 @@ export default function AboutPage() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="space-y-6">
-              <p className="text-sm text-amber-500">Values</p>
+              <p className="text-sm text-primary">Values</p>
               <h2 className="text-3xl font-bold">Our Commitment to Natural Hair Excellence</h2>
               <p className="text-muted-foreground">
                 At Au Natural Company, we take excellence as our daily source of inspiration. We believe in the power of
@@ -68,7 +68,7 @@ export default function AboutPage() {
       <section className="py-16" id="team">
         <div className="container">
           <div className="mb-12">
-            <p className="text-sm text-amber-500">Expertise</p>
+            <p className="text-sm text-primary">Expertise</p>
             <h2 className="text-3xl font-bold">Our Team</h2>
             <p className="text-muted-foreground mt-2">Meet our talented professionals dedicated to your hair needs</p>
           </div>
@@ -145,18 +145,18 @@ export default function AboutPage() {
                   )}
                 </div>
                 <h3 className="font-medium">{member.name}</h3>
-                {member.role && <p className="text-sm text-amber-500">{member.role}</p>}
+                {member.role && <p className="text-sm text-primary">{member.role}</p>}
                 <p className="text-xs mt-2 mb-3 text-slate-600">{member.bio}</p>
                 <div className="flex gap-2 mt-auto">
                   {member.image && (
                     <>
-                      <button className="text-slate-400 hover:text-amber-500 transition-colors">
+                      <button className="text-slate-400 hover:text-primary transition-colors">
                         <Twitter className="h-4 w-4" />
                       </button>
-                      <button className="text-slate-400 hover:text-amber-500 transition-colors">
+                      <button className="text-slate-400 hover:text-primary transition-colors">
                         <Instagram className="h-4 w-4" />
                       </button>
-                      <button className="text-slate-400 hover:text-amber-500 transition-colors">
+                      <button className="text-slate-400 hover:text-primary transition-colors">
                         <Facebook className="h-4 w-4" />
                       </button>
                     </>
@@ -191,13 +191,13 @@ export default function AboutPage() {
               </p>
               <div className="grid grid-cols-2 gap-8 mt-8">
                 <div>
-                  <p className="text-4xl font-bold text-amber-500">95%</p>
+                  <p className="text-4xl font-bold text-primary">95%</p>
                   <p className="text-sm text-muted-foreground">
                     Client satisfaction rate based on feedback and reviews
                   </p>
                 </div>
                 <div>
-                  <p className="text-4xl font-bold text-amber-500">1000+</p>
+                  <p className="text-4xl font-bold text-primary">1000+</p>
                   <p className="text-sm text-muted-foreground">
                     Happy clients served, returning, and loyal since years ago
                   </p>
@@ -225,7 +225,7 @@ export default function AboutPage() {
             <p className="text-muted-foreground">Book your appointment today or explore our service menu</p>
           </div>
           <div className="flex justify-center gap-4">
-            <Button className="bg-amber-400 hover:bg-amber-500 text-black" asChild>
+            <Button className="bg-primary hover:bg-primary text-black" asChild>
               <Link href="/bookings">Book</Link>
             </Button>
             <Button variant="outline" asChild>

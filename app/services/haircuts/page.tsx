@@ -29,7 +29,7 @@ export default function BarberServicesPage() {
               Experience precision haircuts, custom lineups, and expert styling from our team of skilled barbers.
             </p>
             <div className="flex gap-4">
-              <Button className="bg-amber-400 hover:bg-amber-500 text-black" asChild>
+              <Button className="bg-primary hover:bg-primary text-black" asChild>
                 <Link href="/schedule?service=locs">Schedule Now</Link>
               </Button>
             </div>
@@ -71,10 +71,10 @@ export default function BarberServicesPage() {
                 </div>
               </div>
               <div className="flex gap-4">
-                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0" asChild>
+                <Button variant="link" className="text-primary hover:text-primary p-0" asChild>
                   <Link href="/schedule?service=haircut">Book Now →</Link>
                 </Button>
-                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0" asChild>
+                <Button variant="link" className="text-primary hover:text-primary p-0" asChild>
                   <Link href="/contact">Contact Us →</Link>
                 </Button>
               </div>
@@ -114,7 +114,7 @@ export default function BarberServicesPage() {
               },
             ].map((service, index) => (
               <div key={index} className="flex flex-col items-center text-center">
-                <div className="mb-4 rounded-full bg-amber-100 p-4">
+                <div className="mb-4 rounded-full bg-primary p-4">
                   <Image
                     src={service.icon || "/placeholder.svg"}
                     alt={service.title}
@@ -126,7 +126,7 @@ export default function BarberServicesPage() {
                 <h3 className="text-xl font-medium mb-2">{service.title}</h3>
                 <p className="text-muted-foreground mb-4">{service.description}</p>
                 <div className="mt-auto pt-4">
-                  <Button variant="link" className="text-amber-500 hover:text-amber-600">
+                  <Button variant="link" className="text-primary hover:text-primary">
                     Learn More →
                   </Button>
                 </div>
@@ -173,10 +173,10 @@ export default function BarberServicesPage() {
               </div>
 
               <div className="flex gap-4">
-                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0">
+                <Button variant="link" className="text-primary hover:text-primary p-0">
                   Book Now →
                 </Button>
-                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0">
+                <Button variant="link" className="text-primary hover:text-primary p-0">
                   Learn More →
                 </Button>
               </div>
@@ -252,11 +252,11 @@ export default function BarberServicesPage() {
                   />
                 </div>
                 <h3 className="text-xl font-medium mb-1">{barber.name}</h3>
-                <p className="text-amber-500 mb-2">{barber.title}</p>
+                <p className="text-primary mb-2">{barber.title}</p>
                 <p className="text-sm text-muted-foreground mb-4">{barber.bio}</p>
                 <div className="flex gap-2">
                   {[1, 2, 3, 4, 5].map((star) => (
-                    <Star key={star} className="h-4 w-4 fill-amber-400 text-amber-400" />
+                    <Star key={star} className="h-4 w-4 fill-primary text-primary" />
                   ))}
                 </div>
               </div>
@@ -273,7 +273,7 @@ export default function BarberServicesPage() {
             Looking to join our team? We are currently hiring for the following positions.
           </p>
           <div className="flex justify-center">
-            <Button className="bg-amber-400 hover:bg-amber-500 text-black">Apply Now</Button>
+            <Button className="bg-primary hover:bg-primary text-black">Apply Now</Button>
           </div>
         </div>
       </section>
@@ -284,7 +284,7 @@ export default function BarberServicesPage() {
           <div className="flex flex-col items-center text-center">
             <div className="flex gap-1 mb-6">
               {[1, 2, 3, 4, 5].map((star) => (
-                <Star key={star} className="h-5 w-5 fill-amber-400 text-amber-400" />
+                <Star key={star} className="h-5 w-5 fill-primary text-primary" />
               ))}
             </div>
             <blockquote className="text-2xl font-medium mb-6">
@@ -311,7 +311,7 @@ export default function BarberServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 bg-amber-50">
+      <section className="py-12 bg-primary">
         <div className="container">
           <div className="flex flex-col items-center text-center">
             <h2 className="text-3xl font-bold mb-4">Transform Your Look Today</h2>
@@ -319,7 +319,7 @@ export default function BarberServicesPage() {
               Book an appointment today for a professional barbering experience that will exceed your expectations.
             </p>
             <div className="flex gap-4">
-              <Button className="bg-amber-400 hover:bg-amber-500 text-black">Book Now</Button>
+              <Button className="bg-primary hover:bg-primary text-black">Book Now</Button>
               <Button variant="outline">Contact Us</Button>
             </div>
           </div>

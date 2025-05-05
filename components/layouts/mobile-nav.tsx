@@ -6,6 +6,7 @@ import { Sheet, SheetContent } from "@/components/ui/sheet"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { X, Phone, Calendar } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { AccentText } from "../accent-text"
 
 interface MobileNavProps {
   isOpen: boolean
@@ -20,7 +21,14 @@ export function MobileNav({ isOpen, activePath, onOpenChange }: MobileNavProps) 
         <div className="flex flex-col h-full max-h-full overflow-hidden">
           <div className="flex items-center justify-between mb-4">
             <Link href="/" className="font-semibold text-xl" onClick={() => onOpenChange(false)}>
-              Au Natural
+              <AccentText variant="primary" shade="base">
+                Au
+              </AccentText>
+
+              <AccentText variant="secondary" shade="base">
+                Naturel
+              </AccentText>
+              <span className="text-muted-foreground text-xs items-center">©</span>
             </Link>
           </div>
 
@@ -36,7 +44,7 @@ export function MobileNav({ isOpen, activePath, onOpenChange }: MobileNavProps) 
                   href="/"
                   className={cn(
                     "block py-2 text-base font-medium",
-                    activePath === '/' && "text-amber-500 font-bold"
+                    activePath === '/' && "text-primary font-bold"
                   )}
                   onClick={() => onOpenChange(false)}
                 >
@@ -48,7 +56,7 @@ export function MobileNav({ isOpen, activePath, onOpenChange }: MobileNavProps) 
                   href="/about"
                   className={cn(
                     "block py-2 text-base font-medium",
-                    activePath === '/about' && "text-amber-500 font-bold"
+                    activePath === '/about' && "text-primary font-bold"
                   )}
                   onClick={() => onOpenChange(false)}
                 >
@@ -60,7 +68,7 @@ export function MobileNav({ isOpen, activePath, onOpenChange }: MobileNavProps) 
                   <AccordionItem value="services" className="border-b-0">
                     <AccordionTrigger className={cn(
                       "py-2 text-base font-medium",
-                      activePath.startsWith('/services') && "text-amber-500 font-bold"
+                      activePath.startsWith('/services') && "text-primary font-bold"
                     )}>Services</AccordionTrigger>
                     <AccordionContent>
                       <ul className="pl-4 space-y-2">
@@ -69,7 +77,7 @@ export function MobileNav({ isOpen, activePath, onOpenChange }: MobileNavProps) 
                             href="/services"
                             className={cn(
                               "block py-1.5 text-sm",
-                              activePath === '/services' && "text-amber-500 font-bold"
+                              activePath === '/services' && "text-primary font-bold"
                             )}
                             onClick={() => onOpenChange(false)}
                           >
@@ -81,7 +89,7 @@ export function MobileNav({ isOpen, activePath, onOpenChange }: MobileNavProps) 
                             href="/services/locs"
                             className={cn(
                               "block py-1.5 text-sm",
-                              activePath === '/services/locs' && "text-amber-500 font-bold"
+                              activePath === '/services/locs' && "text-primary font-bold"
                             )}
                             onClick={() => onOpenChange(false)}
                           >
@@ -93,7 +101,7 @@ export function MobileNav({ isOpen, activePath, onOpenChange }: MobileNavProps) 
                             href="/services/haircuts"
                             className={cn(
                               "block py-1.5 text-sm",
-                              activePath === '/services/haircuts' && "text-amber-500 font-bold"
+                              activePath === '/services/haircuts' && "text-primary font-bold"
                             )}
                             onClick={() => onOpenChange(false)}
                           >
@@ -105,7 +113,7 @@ export function MobileNav({ isOpen, activePath, onOpenChange }: MobileNavProps) 
                             href="/services/natural-hair"
                             className={cn(
                               "block py-1.5 text-sm",
-                              activePath === '/services/natural-hair' && "text-amber-500 font-bold"
+                              activePath === '/services/natural-hair' && "text-primary font-bold"
                             )}
                             onClick={() => onOpenChange(false)}
                           >
@@ -122,7 +130,7 @@ export function MobileNav({ isOpen, activePath, onOpenChange }: MobileNavProps) 
                   href="/shop"
                   className={cn(
                     "block py-2 text-base font-medium",
-                    activePath === '/shop' && "text-amber-500 font-bold"
+                    activePath === '/shop' && "text-primary font-bold"
                   )}
                   onClick={() => onOpenChange(false)}
                 >
@@ -134,7 +142,7 @@ export function MobileNav({ isOpen, activePath, onOpenChange }: MobileNavProps) 
                   href="/gallery"
                   className={cn(
                     "block py-2 text-base font-medium",
-                    activePath === '/gallery' && "text-amber-500 font-bold"
+                    activePath === '/gallery' && "text-primary font-bold"
                   )}
                   onClick={() => onOpenChange(false)}
                 >
@@ -147,13 +155,13 @@ export function MobileNav({ isOpen, activePath, onOpenChange }: MobileNavProps) 
             <Button variant="outline" className="w-full" onClick={() => onOpenChange(false)} asChild>
               <Link href="/contact" className={cn(
                 "flex items-center justify-center w-full",
-                activePath === '/contact' && "text-amber-500 font-bold"
+                activePath === '/contact' && "text-primary font-bold"
               )}>
                 <Phone className="h-4 w-4 mr-2" />
                 Contact Us
               </Link>
             </Button>
-            <Button className="w-full bg-amber-400 hover:bg-amber-500 text-black" onClick={() => onOpenChange(false)}>
+            <Button className="w-full bg-primary hover:bg-primary text-black" onClick={() => onOpenChange(false)}>
               <Link href="/booking" className={cn(
                 "flex items-center justify-center w-full",
                 activePath === '/booking' && "font-bold"

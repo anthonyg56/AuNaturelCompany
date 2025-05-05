@@ -279,7 +279,7 @@ export default function SchedulePage() {
           />
         </div>
         <div className="absolute top-6 left-6">
-          <Link href="/" className="text-white text-xl font-bold hover:text-amber-400 transition-colors">
+          <Link href="/" className="text-white text-xl font-bold hover:text-primary transition-colors">
             Au Natural
           </Link>
         </div>
@@ -306,7 +306,7 @@ export default function SchedulePage() {
               <div
                 key={step}
                 className={`w-8 h-8 rounded-full flex items-center justify-center ${currentStep === step
-                  ? "bg-amber-400 text-black"
+                  ? "bg-primary text-black"
                   : currentStep > step
                     ? "bg-green-500 text-white"
                     : "bg-gray-200 text-gray-500"
@@ -333,25 +333,25 @@ export default function SchedulePage() {
             {/* Category tabs */}
             <div className="flex mb-6 border-b">
               <button
-                className={`px-4 py-2 ${activeCategory === "locs" ? "border-b-2 border-amber-400 text-amber-600" : "text-gray-500"}`}
+                className={`px-4 py-2 ${activeCategory === "locs" ? "border-b-2 border-primary text-primary" : "text-gray-500"}`}
                 onClick={() => setActiveCategory("locs")}
               >
                 Locs
               </button>
               <button
-                className={`px-4 py-2 ${activeCategory === "barber" ? "border-b-2 border-amber-400 text-amber-600" : "text-gray-500"}`}
+                className={`px-4 py-2 ${activeCategory === "barber" ? "border-b-2 border-primary text-primary" : "text-gray-500"}`}
                 onClick={() => setActiveCategory("barber")}
               >
                 Barber
               </button>
               <button
-                className={`px-4 py-2 ${activeCategory === "natural" ? "border-b-2 border-amber-400 text-amber-600" : "text-gray-500"}`}
+                className={`px-4 py-2 ${activeCategory === "natural" ? "border-b-2 border-primary text-primary" : "text-gray-500"}`}
                 onClick={() => setActiveCategory("natural")}
               >
                 Natural Hair
               </button>
               <button
-                className={`px-4 py-2 ${activeCategory === "misc" ? "border-b-2 border-amber-400 text-amber-600" : "text-gray-500"}`}
+                className={`px-4 py-2 ${activeCategory === "misc" ? "border-b-2 border-primary text-primary" : "text-gray-500"}`}
                 onClick={() => setActiveCategory("misc")}
               >
                 Misc
@@ -365,7 +365,7 @@ export default function SchedulePage() {
                 .map((service) => (
                   <div
                     key={service.id}
-                    className={`p-4 border rounded-lg cursor-pointer transition-colors ${formData.services.includes(service.id) ? "border-amber-400 bg-amber-50" : "hover:border-gray-300"
+                    className={`p-4 border rounded-lg cursor-pointer transition-colors ${formData.services.includes(service.id) ? "border-primary bg-primary" : "hover:border-gray-300"
                       }`}
                     onClick={() => handleServiceToggle(service.id)}
                   >
@@ -381,7 +381,7 @@ export default function SchedulePage() {
                       <div className="flex items-center gap-3">
                         <span className="font-medium">${service.price}</span>
                         <div
-                          className={`w-5 h-5 rounded-full border flex items-center justify-center ${formData.services.includes(service.id) ? "bg-amber-400 border-amber-400" : "border-gray-300"
+                          className={`w-5 h-5 rounded-full border flex items-center justify-center ${formData.services.includes(service.id) ? "bg-primary border-primary" : "border-gray-300"
                             }`}
                         >
                           {formData.services.includes(service.id) && <Check size={12} className="text-white" />}
@@ -415,7 +415,7 @@ export default function SchedulePage() {
               <Button
                 onClick={nextStep}
                 disabled={formData.services.length === 0}
-                className="bg-amber-400 hover:bg-amber-500 text-black"
+                className="bg-primary hover:bg-primary text-black"
               >
                 Next <ArrowRight size={16} className="ml-2" />
               </Button>
@@ -432,7 +432,7 @@ export default function SchedulePage() {
               {teamMembers.map((member) => (
                 <div
                   key={member.id}
-                  className={`p-4 border rounded-lg cursor-pointer transition-colors ${formData.teamMember === member.id ? "border-amber-400 bg-amber-50" : "hover:border-gray-300"
+                  className={`p-4 border rounded-lg cursor-pointer transition-colors ${formData.teamMember === member.id ? "border-primary bg-primary" : "hover:border-gray-300"
                     }`}
                   onClick={() => handleTeamMemberSelect(member.id)}
                 >
@@ -457,7 +457,7 @@ export default function SchedulePage() {
                     </div>
                     <div className="ml-auto">
                       <div
-                        className={`w-5 h-5 rounded-full border flex items-center justify-center ${formData.teamMember === member.id ? "bg-amber-400 border-amber-400" : "border-gray-300"
+                        className={`w-5 h-5 rounded-full border flex items-center justify-center ${formData.teamMember === member.id ? "bg-primary border-primary" : "border-gray-300"
                           }`}
                       >
                         {formData.teamMember === member.id && <Check size={12} className="text-white" />}
@@ -475,7 +475,7 @@ export default function SchedulePage() {
               <Button
                 onClick={nextStep}
                 disabled={!formData.teamMember}
-                className="bg-amber-400 hover:bg-amber-500 text-black"
+                className="bg-primary hover:bg-primary text-black"
               >
                 Next <ArrowRight size={16} className="ml-2" />
               </Button>
@@ -514,7 +514,7 @@ export default function SchedulePage() {
                   {timeSlots.map((time) => (
                     <button
                       key={time}
-                      className={`py-2 px-3 text-sm border rounded-md ${formData.time === time ? "bg-amber-400 border-amber-400 text-black" : "hover:border-gray-300"
+                      className={`py-2 px-3 text-sm border rounded-md ${formData.time === time ? "bg-primary border-primary text-black" : "hover:border-gray-300"
                         }`}
                       onClick={() => handleTimeSelect(time)}
                     >
@@ -532,7 +532,7 @@ export default function SchedulePage() {
               <Button
                 onClick={nextStep}
                 disabled={!formData.date || !formData.time}
-                className="bg-amber-400 hover:bg-amber-500 text-black"
+                className="bg-primary hover:bg-primary text-black"
               >
                 Next <ArrowRight size={16} className="ml-2" />
               </Button>
@@ -673,7 +673,7 @@ export default function SchedulePage() {
                 <Button type="button" variant="outline" onClick={prevStep}>
                   <ArrowLeft size={16} className="mr-2" /> Back
                 </Button>
-                <Button type="submit" className="bg-amber-400 hover:bg-amber-500 text-black">
+                <Button type="submit" className="bg-primary hover:bg-primary text-black">
                   Confirm Booking <ArrowRight size={16} className="ml-2" />
                 </Button>
               </div>
@@ -726,7 +726,7 @@ export default function SchedulePage() {
                 <Button variant="outline">View My Appointments</Button>
               </Link>
               <Link href="/">
-                <Button className="bg-amber-400 hover:bg-amber-500 text-black">Return to Homepage</Button>
+                <Button className="bg-primary hover:bg-primary text-black">Return to Homepage</Button>
               </Link>
             </div>
           </div>

@@ -74,7 +74,7 @@ export default function ServicesPage() {
                   <h3 className="font-medium text-lg mb-2">{service.title}</h3>
                   <p className="text-sm text-muted-foreground mb-4 flex-grow">{service.description}</p>
                   <div className="flex gap-4">
-                    <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0" asChild>
+                    <Button variant="link" className="text-primary hover:text-primary p-0" asChild>
                       <Link href={service.href}>Book Now <ArrowRight className="h-4 w-4 ml-1" /></Link>
                     </Button>
                   </div>
@@ -134,7 +134,7 @@ export default function ServicesPage() {
                   <h3 className="font-medium text-lg mb-2">{service.title}</h3>
                   <p className="text-sm text-muted-foreground mb-4 flex-grow">{service.description}</p>
                   <div className="flex gap-4">
-                    <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0" asChild>
+                    <Button variant="link" className="text-primary hover:text-primary p-0" asChild>
                       <Link href={service.href}>Book Now →</Link>
                     </Button>
                   </div>
@@ -201,7 +201,7 @@ export default function ServicesPage() {
                   <h3 className="font-medium text-lg mb-2">{service.title}</h3>
                   <p className="text-sm text-muted-foreground mb-4 flex-grow">{service.description}</p>
                   <div className="flex gap-4">
-                    <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0" asChild>
+                    <Button variant="link" className="text-primary hover:text-primary p-0" asChild>
                       <Link href={service.href}>Book Now <ArrowRight className="h-4 w-4 ml-1" /></Link>
                     </Button>
                   </div>
@@ -228,7 +228,7 @@ export default function ServicesPage() {
                 let our skilled team bring out your best look.
               </p>
               <div className="flex gap-4">
-                <Button className="bg-amber-400 hover:bg-amber-500 text-black" asChild>
+                <Button className="bg-primary hover:bg-primary text-black" asChild>
                   <Link href="/bookings">Book Now</Link>
                 </Button>
                 <Button variant="outline" asChild>

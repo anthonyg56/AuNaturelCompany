@@ -25,27 +25,27 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-sm text-muted-foreground hover:text-amber-500">
+                <Link href="/" className="text-sm text-muted-foreground hover:text-primary">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-sm text-muted-foreground hover:text-amber-500">
+                <Link href="/about" className="text-sm text-muted-foreground hover:text-primary">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-sm text-muted-foreground hover:text-amber-500">
+                <Link href="/services" className="text-sm text-muted-foreground hover:text-primary">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/gallery" className="text-sm text-muted-foreground hover:text-amber-500">
+                <Link href="/gallery" className="text-sm text-muted-foreground hover:text-primary">
                   Gallery
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-sm text-muted-foreground hover:text-amber-500">
+                <Link href="/contact" className="text-sm text-muted-foreground hover:text-primary">
                   Contact
                 </Link>
               </li>
@@ -57,27 +57,27 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/services/locs" className="text-sm text-muted-foreground hover:text-amber-500">
+                <Link href="/services/locs" className="text-sm text-muted-foreground hover:text-primary">
                   Locs
                 </Link>
               </li>
               <li>
-                <Link href="/services/haircuts" className="text-sm text-muted-foreground hover:text-amber-500">
+                <Link href="/services/haircuts" className="text-sm text-muted-foreground hover:text-primary">
                   Haircuts
                 </Link>
               </li>
               <li>
-                <Link href="/services/natural-hair" className="text-sm text-muted-foreground hover:text-amber-500">
+                <Link href="/services/natural-hair" className="text-sm text-muted-foreground hover:text-primary">
                   Natural Hair
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-sm text-muted-foreground hover:text-amber-500">
+                <Link href="/services" className="text-sm text-muted-foreground hover:text-primary">
                   Color
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-sm text-muted-foreground hover:text-amber-500">
+                <Link href="/services" className="text-sm text-muted-foreground hover:text-primary">
                   Treatments
                 </Link>
               </li>
@@ -89,22 +89,22 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-amber-500">
+                <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/booking" className="text-sm text-muted-foreground hover:text-amber-500">
+                <Link href="/booking" className="text-sm text-muted-foreground hover:text-primary">
                   FAQ
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-sm text-muted-foreground hover:text-amber-500">
+                <Link href="/about" className="text-sm text-muted-foreground hover:text-primary">
                   Care Guide
                 </Link>
               </li>
               <li>
-                <Link href="/shop" className="text-sm text-muted-foreground hover:text-amber-500">
+                <Link href="/shop" className="text-sm text-muted-foreground hover:text-primary">
                   Products
                 </Link>
               </li>
@@ -121,13 +121,13 @@ export default function Footer() {
               <p>(317) 914-3125</p>
             </address>
             <div className="flex gap-4 mt-4">
-              <Link href="https://www.instagram.com/shyntrademarked/" className="text-amber-400 hover:text-amber-600 transition-colors">
+              <Link href="https://www.instagram.com/shyntrademarked/" className="text-primary hover:text-primary transition-colors">
                 <Instagram className="h-5 w-5" />
               </Link>
-              <Link href="https://www.facebook.com/ShynTrademarked/" className="text-amber-400 hover:text-amber-600 transition-colors">
+              <Link href="https://www.facebook.com/ShynTrademarked/" className="text-primary hover:text-primary transition-colors">
                 <Facebook className="h-5 w-5" />
               </Link>
-              <Link href="https://www.tiktok.com/@shyn_trademarked" className="text-amber-400 hover:text-amber-600 transition-colors">
+              <Link href="https://www.tiktok.com/@shyn_trademarked" className="text-primary hover:text-primary transition-colors">
                 <Twitter className="h-5 w-5" />
               </Link>
             </div>
@@ -137,13 +137,13 @@ export default function Footer() {
         <div className="text-center text-xs text-muted-foreground">
           <p>© 2023 Au Natural Company. All rights reserved.</p>
           <div className="flex justify-center gap-4 mt-2">
-            <Link href="#" className="hover:text-amber-500">
+            <Link href="#" className="hover:text-primary">
               Privacy Policy
             </Link>
-            <Link href="#" className="hover:text-amber-500">
+            <Link href="#" className="hover:text-primary">
               Terms of Service
             </Link>
-            <Link href="#" className="hover:text-amber-500">
+            <Link href="#" className="hover:text-primary">
               Accessibility
             </Link>
           </div>

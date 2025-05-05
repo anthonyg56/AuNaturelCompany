@@ -58,7 +58,7 @@ export default function Navbar() {
               <Link href="/" legacyBehavior passHref>
                 <NavigationMenuLink className={cn(
                   "group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50",
-                  isActive('/') && "text-amber-400"
+                  isActive('/') && "text-primary"
                 )}>
                   Home
                 </NavigationMenuLink>
@@ -68,7 +68,7 @@ export default function Navbar() {
               <Link href="/about" legacyBehavior passHref>
                 <NavigationMenuLink className={cn(
                   "group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50",
-                  isActive('/about') && "text-amber-400"
+                  isActive('/about') && "text-primary"
                 )}>
                   About
                 </NavigationMenuLink>
@@ -137,7 +137,7 @@ export default function Navbar() {
               <Link href="/shop" legacyBehavior passHref>
                 <NavigationMenuLink className={cn(
                   "group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50",
-                  isActive('/shop') && "text-amber-400"
+                  isActive('/shop') && "text-primary"
                 )}>
                   Shop
                 </NavigationMenuLink>
@@ -147,7 +147,7 @@ export default function Navbar() {
               <Link href="/gallery" legacyBehavior passHref>
                 <NavigationMenuLink className={cn(
                   "group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50",
-                  isActive('/gallery') && "text-amber-400"
+                  isActive('/gallery') && "text-primary"
                 )}>
                   Gallery
                 </NavigationMenuLink>
@@ -168,7 +168,7 @@ export default function Navbar() {
               Contact
             </Link>
           </Button>
-          <Button size="sm" className="bg-amber-400 hover:bg-amber-500 text-black" asChild>
+          <Button size="sm" className="bg-primary hover:bg-primary text-black" asChild>
             <Link href="/booking">
               Book Now
             </Link>

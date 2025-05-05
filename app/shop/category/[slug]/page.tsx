@@ -303,11 +303,11 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
       <div className="bg-gray-50 py-3">
         <div className="container">
           <div className="flex items-center text-sm text-muted-foreground">
-            <Link href="/" className="hover:text-amber-600">
+            <Link href="/" className="hover:text-primary">
               Home
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
-            <Link href="/shop" className="hover:text-amber-600">
+            <Link href="/shop" className="hover:text-primary">
               Shop
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
@@ -325,7 +325,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
           <div className="max-w-2xl">
             <h1 className="text-4xl font-bold mb-4">{categoryData.name}</h1>
             <p className="text-xl mb-6">{categoryData.description}</p>
-            <Button className="bg-amber-400 hover:bg-amber-500 text-black">Shop Now</Button>
+            <Button className="bg-primary hover:bg-primary text-black">Shop Now</Button>
           </div>
         </div>
       </section>
@@ -373,7 +373,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
                 <div className="flex flex-wrap gap-2">
                   {Array.from(new Set(products.filter((p) => p.category === categoryType).flatMap((p) => p.tags))).map(
                     (tag, index) => (
-                      <Badge key={index} variant="outline" className="cursor-pointer hover:bg-amber-100">
+                      <Badge key={index} variant="outline" className="cursor-pointer hover:bg-primary">
                         {tag}
                       </Badge>
                     ),
@@ -421,7 +421,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
                   </div>
                   <div className="flex border rounded-md">
                     <button
-                      className={`px-3 py-2 ${viewMode === "grid" ? "bg-amber-100 text-amber-600" : "hover:bg-gray-100"
+                      className={`px-3 py-2 ${viewMode === "grid" ? "bg-primary text-primary" : "hover:bg-gray-100"
                         }`}
                       onClick={() => setViewMode("grid")}
                     >
@@ -443,7 +443,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
                       </svg>
                     </button>
                     <button
-                      className={`px-3 py-2 ${viewMode === "list" ? "bg-amber-100 text-amber-600" : "hover:bg-gray-100"
+                      className={`px-3 py-2 ${viewMode === "list" ? "bg-primary text-primary" : "hover:bg-gray-100"
                         }`}
                       onClick={() => setViewMode("list")}
                     >
@@ -496,7 +496,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
                           className="object-cover group-hover:scale-105 transition-transform duration-300"
                         />
                         {product.bestSeller && (
-                          <Badge className="absolute top-2 left-2 bg-amber-500 hover:bg-amber-600">Best Seller</Badge>
+                          <Badge className="absolute top-2 left-2 bg-primary hover:bg-primary">Best Seller</Badge>
                         )}
                         {product.new && (
                           <Badge className="absolute top-2 left-2 bg-blue-500 hover:bg-blue-600">New</Badge>
@@ -513,7 +513,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
                             <Heart className="h-4 w-4" />
                             <span className="sr-only">Add to wishlist</span>
                           </Button>
-                          <Button size="icon" className="rounded-full bg-amber-400/90 hover:bg-amber-400 text-black">
+                          <Button size="icon" className="rounded-full bg-primary/90 hover:bg-primary text-black">
                             <ShoppingCart className="h-4 w-4" />
                             <span className="sr-only">Add to cart</span>
                           </Button>
@@ -521,12 +521,12 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
                       </div>
                       <div className="p-4">
                         <Link href={`/shop/product/${product.id}`}>
-                          <h3 className="font-medium mb-1 group-hover:text-amber-600 transition-colors">
+                          <h3 className="font-medium mb-1 group-hover:text-primary transition-colors">
                             {product.name}
                           </h3>
                         </Link>
                         <div className="flex items-center mb-2">
-                          <div className="flex text-amber-400">
+                          <div className="flex text-primary">
                             {[...Array(5)].map((_, i) => (
                               <Star
                                 key={i}
@@ -564,7 +564,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
                           className="object-cover"
                         />
                         {product.bestSeller && (
-                          <Badge className="absolute top-2 left-2 bg-amber-500 hover:bg-amber-600">Best Seller</Badge>
+                          <Badge className="absolute top-2 left-2 bg-primary hover:bg-primary">Best Seller</Badge>
                         )}
                         {product.new && (
                           <Badge className="absolute top-2 left-2 bg-blue-500 hover:bg-blue-600">New</Badge>
@@ -575,10 +575,10 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
                       </div>
                       <div className="flex-1 p-4 flex flex-col">
                         <Link href={`/shop/product/${product.id}`}>
-                          <h3 className="font-medium mb-1 hover:text-amber-600 transition-colors">{product.name}</h3>
+                          <h3 className="font-medium mb-1 hover:text-primary transition-colors">{product.name}</h3>
                         </Link>
                         <div className="flex items-center mb-2">
-                          <div className="flex text-amber-400">
+                          <div className="flex text-primary">
                             {[...Array(5)].map((_, i) => (
                               <Star
                                 key={i}
@@ -607,7 +607,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
                               <Heart className="h-4 w-4 mr-1" />
                               Wishlist
                             </Button>
-                            <Button size="sm" className="rounded-full bg-amber-400 hover:bg-amber-500 text-black">
+                            <Button size="sm" className="rounded-full bg-primary hover:bg-primary text-black">
                               <ShoppingCart className="h-4 w-4 mr-1" />
                               Add to Cart
                             </Button>
@@ -626,7 +626,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
                     <Button variant="outline" size="sm" disabled>
                       Previous
                     </Button>
-                    <Button variant="outline" size="sm" className="bg-amber-400 text-black">
+                    <Button variant="outline" size="sm" className="bg-primary text-black">
                       1
                     </Button>
                     <Button variant="outline" size="sm">
@@ -681,7 +681,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
           </p>
           <div className="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
             <Input type="email" placeholder="Your email address" className="flex-grow" />
-            <Button className="bg-amber-400 hover:bg-amber-500 text-black">Subscribe</Button>
+            <Button className="bg-primary hover:bg-primary text-black">Subscribe</Button>
           </div>
         </div>
       </section>

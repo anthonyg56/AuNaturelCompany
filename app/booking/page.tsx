@@ -67,9 +67,9 @@ export default function BookingPage() {
               <input
                 type="text"
                 placeholder="Looking for a new stylist? Get in touch"
-                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-amber-400"
+                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
               />
-              <Button className="absolute right-1 top-1 bg-amber-400 hover:bg-amber-500 text-black h-8">Search</Button>
+              <Button className="absolute right-1 top-1 bg-primary hover:bg-primary text-black h-8">Search</Button>
             </div>
           </div>
         </div>
@@ -89,14 +89,14 @@ export default function BookingPage() {
 
         <div className="container relative z-20">
           <div className="max-w-3xl mx-auto text-center text-white">
-            <p className="text-amber-400 font-medium mb-4">Effortless Booking</p>
+            <p className="text-primary font-medium mb-4">Effortless Booking</p>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Book Your Style</h1>
             <p className="text-xl mb-8 text-gray-100">
               Schedule your perfect loc maintenance or barbering appointment with just a few clicks. Experience
               professional, personalized hair care tailored to your unique style at The Au Natural Company.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button className="bg-amber-400 hover:bg-amber-500 text-black text-lg px-8 py-6">
+              <Button className="bg-primary hover:bg-primary text-black text-lg px-8 py-6">
                 <Link href="/schedule">
                   Schedule Now
                 </Link>
@@ -128,37 +128,37 @@ export default function BookingPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="bg-white p-4 rounded-full inline-flex items-center justify-center mb-4 shadow-sm">
-                <Scissors className="h-6 w-6 text-amber-500" />
+                <Scissors className="h-6 w-6 text-primary" />
               </div>
               <h3 className="font-bold mb-2">Step 1: Choose Your Desired Service</h3>
               <p className="text-sm text-muted-foreground mb-4">Select our range of loc and natural hair services</p>
-              <Button variant="link" className="text-amber-500 hover:text-amber-600">
+              <Button variant="link" className="text-primary hover:text-primary">
                 Select <ChevronRight className="h-4 w-4 ml-1" />
               </Button>
             </div>
 
             <div className="text-center">
               <div className="bg-white p-4 rounded-full inline-flex items-center justify-center mb-4 shadow-sm">
-                <User className="h-6 w-6 text-amber-500" />
+                <User className="h-6 w-6 text-primary" />
               </div>
               <h3 className="font-bold mb-2">Step 2: Optional Stylist Selection</h3>
               <p className="text-sm text-muted-foreground mb-4">
                 Choose from our talented stylists (skip this step if you prefer)
               </p>
-              <Button variant="link" className="text-amber-500 hover:text-amber-600">
+              <Button variant="link" className="text-primary hover:text-primary">
                 Choose <ChevronRight className="h-4 w-4 ml-1" />
               </Button>
             </div>
 
             <div className="text-center">
               <div className="bg-white p-4 rounded-full inline-flex items-center justify-center mb-4 shadow-sm">
-                <Calendar className="h-6 w-6 text-amber-500" />
+                <Calendar className="h-6 w-6 text-primary" />
               </div>
               <h3 className="font-bold mb-2">Step 3: Pick Your Date and Time</h3>
               <p className="text-sm text-muted-foreground mb-4">
                 Select a convenient time slot that fits your schedule
               </p>
-              <Button variant="link" className="text-amber-500 hover:text-amber-600">
+              <Button variant="link" className="text-primary hover:text-primary">
                 Book <ChevronRight className="h-4 w-4 ml-1" />
               </Button>
             </div>
@@ -265,7 +265,7 @@ export default function BookingPage() {
 
           <div className="text-center mt-12">
             <h3 className="text-xl font-bold mb-4">Still have questions?</h3>
-            <Button variant="outline" className="text-amber-500 hover:text-amber-600" asChild>
+            <Button variant="outline" className="text-primary hover:text-primary" asChild>
               <Link href="/contact">Contact</Link>
             </Button>
           </div>
@@ -279,7 +279,7 @@ export default function BookingPage() {
           <p className="text-muted-foreground mb-8">
             Experience the best in loc care and styling. Special offers available for first-time clients!
           </p>
-          <Button className="bg-amber-400 hover:bg-amber-500 text-black">Book Now</Button>
+          <Button className="bg-primary hover:bg-primary text-black">Book Now</Button>
           <Button variant="link" className="ml-4">
             Learn More
           </Button>

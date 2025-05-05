@@ -29,7 +29,7 @@ export default function LocsServicesPage() {
               Expert loc creation, maintenance, and styling services for all stages of your loc journey.
             </p>
             <div className="flex gap-4">
-              <Button className="bg-amber-400 hover:bg-amber-500 text-black" asChild>
+              <Button className="bg-primary hover:bg-primary text-black" asChild>
                 <Link href="/schedule?service=locs">Schedule Now</Link>
               </Button>
             </div>
@@ -74,7 +74,7 @@ export default function LocsServicesPage() {
                 </div>
               </div>
               <div className="flex gap-4">
-                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0" asChild>
+                <Button variant="link" className="text-primary hover:text-primary p-0" asChild>
                   <Link href="/schedule?service=locs">Schedule an Appointment Today →</Link>
                 </Button>
               </div>
@@ -108,7 +108,7 @@ export default function LocsServicesPage() {
                 and natural growth.
               </p>
               <div className="flex gap-4">
-                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0" asChild>
+                <Button variant="link" className="text-primary hover:text-primary p-0" asChild>
                   <Link href="/schedule?service=locs">Schedule an Appointment Today →</Link>
                 </Button>
               </div>
@@ -164,7 +164,7 @@ export default function LocsServicesPage() {
               </div>
 
               <div className="flex gap-4">
-                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0" asChild>
+                <Button variant="link" className="text-primary hover:text-primary p-0" asChild>
                   <Link href="/schedule?service=locs">Schedule an Appointment Today →</Link>
                 </Button>
               </div>
@@ -212,7 +212,7 @@ export default function LocsServicesPage() {
               },
             ].map((service, index) => (
               <div key={index} className="flex flex-col items-center text-center">
-                <div className="mb-4 rounded-full bg-amber-100 p-4">
+                <div className="mb-4 rounded-full bg-primary p-4">
                   <Image
                     src={service.icon || "/placeholder.svg"}
                     alt={service.title}
@@ -224,7 +224,7 @@ export default function LocsServicesPage() {
                 <h3 className="text-xl font-medium mb-2">{service.title}</h3>
                 <p className="text-muted-foreground mb-4">{service.description}</p>
                 <div className="mt-auto pt-4">
-                  <Button variant="link" className="text-amber-500 hover:text-amber-600">
+                  <Button variant="link" className="text-primary hover:text-primary">
                     Learn More →
                   </Button>
                 </div>
@@ -240,7 +240,7 @@ export default function LocsServicesPage() {
           <div className="flex flex-col items-center text-center">
             <div className="flex gap-1 mb-6">
               {[1, 2, 3, 4, 5].map((star) => (
-                <Star key={star} className="h-5 w-5 fill-amber-400 text-amber-400" />
+                <Star key={star} className="h-5 w-5 fill-primary text-primary" />
               ))}
             </div>
             <blockquote className="text-2xl font-medium mb-6">
@@ -267,7 +267,7 @@ export default function LocsServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 bg-amber-50">
+      <section className="py-12 bg-primary">
         <div className="container">
           <div className="flex flex-col items-center text-center">
             <h2 className="text-3xl font-bold mb-4">Transform Your Hair Today</h2>
@@ -275,7 +275,7 @@ export default function LocsServicesPage() {
               Book an appointment today for expert loc services that will enhance your natural beauty and confidence.
             </p>
             <div className="flex gap-4">
-              <Button className="bg-amber-400 hover:bg-amber-500 text-black">Book Now</Button>
+              <Button className="bg-primary hover:bg-primary text-black">Book Now</Button>
               <Button variant="outline">Learn More</Button>
             </div>
           </div>

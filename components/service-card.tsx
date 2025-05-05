@@ -32,7 +32,7 @@ export function ServiceCard({
           </div>
           <Link
             href={linkHref}
-            className="text-sm font-medium flex items-center hover:text-amber-600 transition-colors"
+            className="text-sm font-medium flex items-center hover:text-primary transition-colors"
           >
             {linkText} <ArrowRight className="h-4 w-4 ml-1" />
           </Link>
@@ -48,7 +48,7 @@ export function ServiceCard({
       </div>
       <h3 className="font-medium text-lg mb-1">{title}</h3>
       <p className="text-sm text-muted-foreground mb-4 flex-grow">{description}</p>
-      <Link href={linkHref} className="text-sm font-medium flex items-center hover:text-amber-600 transition-colors">
+      <Link href={linkHref} className="text-sm font-medium flex items-center hover:text-primary transition-colors">
         {linkText} <ArrowRight className="h-4 w-4 ml-1" />
       </Link>
     </div>

@@ -29,7 +29,7 @@ export default function NaturalHairServicesPage() {
               Specialized care and styling for all natural hair textures, celebrating your hair's unique beauty.
             </p>
             <div className="flex gap-4">
-              <Button className="bg-amber-400 hover:bg-amber-500 text-black" asChild>
+              <Button className="bg-primary hover:bg-primary text-black" asChild>
                 <Link href="/schedule?service=locs">Schedule Now</Link>
               </Button>
             </div>
@@ -67,10 +67,10 @@ export default function NaturalHairServicesPage() {
               </div>
 
               <div className="flex gap-4">
-                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0" asChild>
+                <Button variant="link" className="text-primary hover:text-primary p-0" asChild>
                   <Link href="/schedule?service=natural-hair">Book Consultation →</Link>
                 </Button>
-                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0" asChild>
+                <Button variant="link" className="text-primary hover:text-primary p-0" asChild>
                   <Link href="/gallery">View Gallery →</Link>
                 </Button>
               </div>
@@ -103,23 +103,23 @@ export default function NaturalHairServicesPage() {
                 title: "Silk Press & Straightening",
                 description:
                   "Achieve sleek, smooth results without damage using our gentle heat styling techniques and protective products.",
-                icon: <Scissors className="h-6 w-6 text-amber-500" />,
+                icon: <Scissors className="h-6 w-6 text-primary" />,
               },
               {
                 title: "Protective Styling",
                 description:
                   "Beautiful braids, twists, and updos that protect your natural hair while promoting growth and reducing manipulation.",
-                icon: <Shield className="h-6 w-6 text-amber-500" />,
+                icon: <Shield className="h-6 w-6 text-primary" />,
               },
               {
                 title: "Curl Definition & Styling",
                 description:
                   "Enhance your natural curl pattern with specialized techniques that define, moisturize, and showcase your curls.",
-                icon: <Sparkles className="h-6 w-6 text-amber-500" />,
+                icon: <Sparkles className="h-6 w-6 text-primary" />,
               },
             ].map((service, index) => (
               <div key={index} className="flex flex-col items-center text-center p-6 border rounded-lg">
-                <div className="mb-4 rounded-full bg-amber-100 p-4">{service.icon}</div>
+                <div className="mb-4 rounded-full bg-primary p-4">{service.icon}</div>
                 <h3 className="text-xl font-medium mb-2">{service.title}</h3>
                 <p className="text-muted-foreground mb-4">{service.description}</p>
               </div>
@@ -149,19 +149,19 @@ export default function NaturalHairServicesPage() {
               </p>
 
               <div className="space-y-4 mb-6">
-                <div className="border-l-4 border-amber-400 pl-4">
+                <div className="border-l-4 border-primary pl-4">
                   <h3 className="font-medium mb-1">Deep Conditioning Treatments</h3>
                   <p className="text-sm text-muted-foreground">
                     Intensive moisture replenishment for dry, damaged hair using premium, natural ingredients.
                   </p>
                 </div>
-                <div className="border-l-4 border-amber-400 pl-4">
+                <div className="border-l-4 border-primary pl-4">
                   <h3 className="font-medium mb-1">Protein Treatments</h3>
                   <p className="text-sm text-muted-foreground">
                     Strengthen fragile or over-processed hair with our restorative protein treatments.
                   </p>
                 </div>
-                <div className="border-l-4 border-amber-400 pl-4">
+                <div className="border-l-4 border-primary pl-4">
                   <h3 className="font-medium mb-1">Scalp Therapy</h3>
                   <p className="text-sm text-muted-foreground">
                     Address scalp concerns and promote healthy hair growth with our specialized scalp treatments.
@@ -170,10 +170,10 @@ export default function NaturalHairServicesPage() {
               </div>
 
               <div className="flex gap-4">
-                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0" asChild>
+                <Button variant="link" className="text-primary hover:text-primary p-0" asChild>
                   <Link href="/schedule?service=natural-hair">Book Treatment →</Link>
                 </Button>
-                <Button variant="link" className="text-amber-500 hover:text-amber-600 p-0" asChild>
+                <Button variant="link" className="text-primary hover:text-primary p-0" asChild>
                   <Link href="/contact">Contact Us →</Link>
                 </Button>
               </div>
@@ -205,7 +205,7 @@ export default function NaturalHairServicesPage() {
           </div>
 
           <div className="flex justify-center mt-8">
-            <Button variant="outline" className="border-amber-400 text-amber-600 hover:bg-amber-50" asChild>
+            <Button variant="outline" className="border-primary text-primary hover:bg-primary" asChild>
               <Link href="/gallery">View Full Gallery</Link>
             </Button>
           </div>
@@ -244,7 +244,7 @@ export default function NaturalHairServicesPage() {
                 </div>
               </div>
 
-              <Button className="bg-amber-400 hover:bg-amber-500 text-black" asChild>
+              <Button className="bg-primary hover:bg-primary text-black" asChild>
                 <Link href="/schedule?service=natural-hair">Schedule Consultation</Link>
               </Button>
             </div>
@@ -262,12 +262,12 @@ export default function NaturalHairServicesPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="py-16 bg-amber-50">
+      <section className="py-16 bg-primary">
         <div className="container max-w-4xl">
           <div className="flex flex-col items-center text-center">
             <div className="flex gap-1 mb-6">
               {[1, 2, 3, 4, 5].map((star) => (
-                <Star key={star} className="h-5 w-5 fill-amber-400 text-amber-400" />
+                <Star key={star} className="h-5 w-5 fill-primary text-primary" />
               ))}
             </div>
             <blockquote className="text-2xl font-medium mb-6">
@@ -303,7 +303,7 @@ export default function NaturalHairServicesPage() {
               stylists.
             </p>
             <div className="flex gap-4">
-              <Button className="bg-amber-400 hover:bg-amber-500 text-black" asChild>
+              <Button className="bg-primary hover:bg-primary text-black" asChild>
                 <Link href="/schedule?service=natural-hair">Book Now</Link>
               </Button>
               <Button variant="outline" asChild>
