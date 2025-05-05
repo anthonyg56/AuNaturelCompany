@@ -16,6 +16,7 @@ import { ClientWrapper } from "@/components/layouts/navbar-client-wrapper";
 import { AccentText } from "@/components/accent-text";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
+import { ShoppingCartButton } from "./cart-button";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -156,12 +157,7 @@ export default function Navbar() {
           </NavigationMenuList>
         </NavigationMenu>
         <div className="hidden md:flex items-center gap-4">
-          <Button variant="ghost" size="icon" asChild>
-            <Link href="/cart">
-              <ShoppingCart className="h-5 w-5" />
-              <span className="sr-only">Shopping Cart</span>
-            </Link>
-          </Button>
+          <ShoppingCartButton />
           <Button variant="outline" size="sm" asChild>
             <Link href="/contact">
               <Phone className="h-4 w-4 mr-2" />
