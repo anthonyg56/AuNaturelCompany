@@ -14,18 +14,21 @@ export default function ServicesPage() {
   return (
     <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
-      <section className="py-16 bg-gray-600 text-white">
-        <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="space-y-4">
-              <h1 className="text-3xl font-bold tracking-tight">Expert Loc Services</h1>
-              <p className="text-gray-200">
-                Discover our transformation magic effect, and extend full services to build for your unique style.
-              </p>
-            </div>
-            <div className="hidden md:block">
-              <div className="w-full h-32 bg-gray-500 rounded-lg"></div>
-            </div>
+      <section className="relative py-16 bg-gray-900 text-white">
+        <div className="absolute inset-0 z-0 opacity-30">
+          <Image
+            src="https://images.unsplash.com/photo-1512314889357-e157c22f938d?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Natural hair products"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="container relative z-10">
+          <div className="max-w-2xl">
+            <h1 className="text-4xl font-bold mb-4">Our Expert Loc Services</h1>
+            <p className="text-xl mb-6 text-gray-200">
+              Discover our transformation magic effect, and extend full services to build for your unique style.
+            </p>
           </div>
         </div>
       </section>

@@ -80,6 +80,19 @@ export default function Navbar() {
                   <li className="flex-1">
                     <NavigationMenuLink asChild>
                       <Link
+                        href="/services"
+                        className="block select-none h-full space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                      >
+                        <div className="text-sm font-medium leading-none">All Services</div>
+                        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                          View all of our services
+                        </p>
+                      </Link>
+                    </NavigationMenuLink>
+                  </li>
+                  <li className="flex-1">
+                    <NavigationMenuLink asChild>
+                      <Link
                         href="/services/locs"
                         className="block select-none h-full space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                       >
