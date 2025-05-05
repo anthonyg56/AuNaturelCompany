@@ -45,10 +45,14 @@ export default function Navbar() {
         </Link>
 
         {/* Mobile menu trigger */}
-        <Button variant="ghost" size="icon" className="md:hidden" id="mobile-menu-trigger">
-          <Menu className="h-6 w-6" />
-          <span className="sr-only">Toggle menu</span>
-        </Button>
+        <div className="md:hidden flex items-center gap-4">
+          <ShoppingCartButton />
+          <Button variant="ghost" size="icon" className="md:hidden" id="mobile-menu-trigger">
+            <Menu className="h-6 w-6" />
+            <span className="sr-only">Toggle menu</span>
+          </Button>
+        </div>
+
 
         {/* Mobile navigation drawer */}
         <ClientWrapper activePath={pathname} />
