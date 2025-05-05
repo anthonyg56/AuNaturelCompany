@@ -51,7 +51,7 @@ export default function Home() {
                   <AccentText variant="secondary">exceptional service</AccentText> and
                   care for your hair journey.
                 </p>
-                <Button className="bg-au-primary hover:bg-au-primary-dark text-black" asChild>
+                <Button className="bg-primary hover:bg-primary-dark text-black" asChild>
                   <Link href="/booking">Book Now</Link>
                 </Button>
               </div>
@@ -327,7 +327,7 @@ export default function Home() {
                   <AccentText variant="secondary">expert locticians</AccentText> to
                   start your loc journey.
                 </p>
-                <Button className="bg-au-primary hover:bg-au-primary-dark text-black" asChild>
+                <Button className="bg-primary hover:bg-primary-dark text-black" asChild>
                   <Link href="/booking">Book Now</Link>
                 </Button>
               </div>

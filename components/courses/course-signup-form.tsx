@@ -73,7 +73,7 @@ export function CourseSignupForm() {
       </div>
       <Button
         type="submit"
-        className="w-full bg-au-primary hover:bg-au-primary-dark text-black"
+        className="w-full bg-primary hover:bg-au-primary-dark text-black"
         disabled={loading}
       >
         {loading ? "Submitting..." : "Notify Me"}
