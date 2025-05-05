@@ -94,6 +94,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/careers" className="text-sm text-muted-foreground hover:text-primary">
+                  Careers
+                </Link>
+              </li>
+              <li>
                 <Link href="/booking" className="text-sm text-muted-foreground hover:text-primary">
                   FAQ
                 </Link>
