@@ -121,13 +121,13 @@ export default function Footer() {
               <p>(317) 914-3125</p>
             </address>
             <div className="flex gap-4 mt-4">
-              <Link href="#" className="text-amber-400 hover:text-amber-600 transition-colors">
+              <Link href="https://www.instagram.com/shyntrademarked/" className="text-amber-400 hover:text-amber-600 transition-colors">
                 <Instagram className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-amber-400 hover:text-amber-600 transition-colors">
+              <Link href="https://www.facebook.com/ShynTrademarked/" className="text-amber-400 hover:text-amber-600 transition-colors">
                 <Facebook className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-amber-400 hover:text-amber-600 transition-colors">
+              <Link href="https://www.tiktok.com/@shyn_trademarked" className="text-amber-400 hover:text-amber-600 transition-colors">
                 <Twitter className="h-5 w-5" />
               </Link>
             </div>

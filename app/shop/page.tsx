@@ -295,7 +295,7 @@ export default function ShopPage() {
         <div className="container">
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-2xl font-bold">Featured Products</h2>
-            <Link href="/shop/featured" className="text-amber-600 hover:text-amber-700 font-medium">
+            <Link href="#" className="text-amber-600 hover:text-amber-700 font-medium">
               View All
             </Link>
           </div>

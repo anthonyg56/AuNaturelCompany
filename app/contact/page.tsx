@@ -46,31 +46,6 @@ export default function ContactPage() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      {/* Map Section */}
-      <section className="py-12">
-        <div className="container">
-          <div className="text-center mb-8 grid gap-3">
-            <h2 className="text-3xl font-bold">Our Location</h2>
-            <p className="text-muted-foreground">
-              We are located at 2605 E 62nd St, Indianapolis, IN 46220.
-            </p>
-          </div>
-
-          <div className="w-full h-[300px] bg-gray-200 rounded-lg relative">
-            <iframe
-              width="450"
-              height="250"
-              frameBorder="0" style={{ border: 0 }}
-              referrerPolicy="no-referrer-when-downgrade"
-              src={`https://www.google.com/maps/embed/v1/place?key=${encodeURIComponent(GOOGLE_API_KEY)}&q=${encodeURIComponent("2605 E 62nd St 2001 121 2021")}`}
-              allowFullScreen
-              className="rounded-lg w-full h-full"
-            >
-            </iframe>
-          </div>
-        </div>
-      </section>
-
       {/* Contact Form Section */}
       <section className="py-12">
         <div className="container">
@@ -188,8 +163,8 @@ export default function ContactPage() {
               <p className="text-sm text-muted-foreground mb-2">
                 Call us for immediate assistance or booking inquiries.
               </p>
-              <a href="tel:+13175551234" className="text-amber-500 hover:underline">
-                (317) 555-1234
+              <a href="tel:+13179143125" className="text-amber-500 hover:underline">
+                (317) 914-3125
               </a>
             </div>
 
@@ -201,11 +176,64 @@ export default function ContactPage() {
               <p className="text-sm text-muted-foreground mb-2">
                 Visit our location for in-person consultations and services.
               </p>
-              <address className="not-italic text-amber-500">123 Main St, Indianapolis, IN 46204</address>
+              <address className="not-italic text-amber-500">2605 E 62nd St, Suite 2001, Indianapolis, IN 46220</address>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Map Section */}
+      <section className="py-12">
+        <div className="container">
+          <div className="text-center mb-8">
+            <p className="text-sm text-amber-500 mb-2">Location</p>
+            <h2 className="text-3xl font-bold mb-4">Come Visit Us</h2>
+            <p className="text-muted-foreground">We're located north east of Indianapolis at 2605 E 62nd St, Suite 2001, Indianapolis, IN 46220.</p>
+          </div>
+
+          <div className="w-full h-[300px] bg-gray-200 rounded-lg relative">
+            <iframe
+              width="450"
+              height="250"
+              frameBorder="0" style={{ border: 0 }}
+              referrerPolicy="no-referrer-when-downgrade"
+              src={`https://www.google.com/maps/embed/v1/place?key=${encodeURIComponent(GOOGLE_API_KEY)}&q=${encodeURIComponent("2605 E 62nd St 2001 121 2021")}`}
+              allowFullScreen
+              className="rounded-lg w-full h-full"
+            >
+            </iframe>
+          </div>
+
+          {/* Store Hours */}
+          <div className="mt-8 max-w-md mx-auto">
+            <h3 className="text-xl font-semibold mb-4 text-center">Store Hours</h3>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="py-2 border-b">Sunday</div>
+              <div className="py-2 border-b text-right">Closed</div>
+
+              <div className="py-2 border-b">Monday</div>
+              <div className="py-2 border-b text-right">Closed</div>
+
+              <div className="py-2 border-b">Tuesday</div>
+              <div className="py-2 border-b text-right">11:30 AM - 05:00 PM</div>
+
+              <div className="py-2 border-b">Wednesday</div>
+              <div className="py-2 border-b text-right">10:00 AM - 08:00 PM</div>
+
+              <div className="py-2 border-b">Thursday</div>
+              <div className="py-2 border-b text-right">11:30 AM - 09:00 PM</div>
+
+              <div className="py-2 border-b">Friday</div>
+              <div className="py-2 border-b text-right">09:00 AM - 05:00 PM</div>
+
+              <div className="py-2 border-b">Saturday</div>
+              <div className="py-2 border-b text-right">08:00 AM - 04:30 PM</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
     </div>
   )
 }

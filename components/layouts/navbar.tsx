@@ -15,6 +15,7 @@ import {
 import { ClientWrapper } from "@/components/layouts/navbar-client-wrapper";
 import { AccentText } from "@/components/accent-text";
 import { cn } from "@/lib/utils";
+import { useState } from "react";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -49,7 +50,7 @@ export default function Navbar() {
         </Button>
 
         {/* Mobile navigation drawer */}
-        <ClientWrapper />
+        <ClientWrapper activePath={pathname} />
 
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList>
