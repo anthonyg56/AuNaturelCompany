@@ -108,3 +108,25 @@ Locs Indianapolis, Dreadlocks Indianapolis, Loc Retwist, Starter Locs, Loc Maint
 ---
 
 We look forward to welcoming you to The Au Natural Company and embarking on your beautiful hair journey with us!
+
+# Hi, I'm Anthony Gayflor
+
+I'm a Full-Stack developer based in Indianapolis, IN who specializes in TypeScript development. I'm passionate about creating robust web applications and exploring new technologies.
+
+Top language used in my repos
+Languages used in my public repos - TypeScript enthusiast 💙
+
+### 🛠️ Technologies & Tools I Use
+
+- React
+- Next.js
+- TypeScript
+- Postgres
+- Supabase
+- TailwindCSS
+- Tanstack Query
+- Hono
+- Bun
+- Node.js
+- Express
+- ... and more!
