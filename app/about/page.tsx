@@ -164,13 +164,13 @@ export default function AboutPage() {
       </PageSection>
 
       {/* We're Hiring Section */}
-      <PageSection className="py-12 bg-slate-50">
+      {/* <PageSection className="py-12 bg-slate-50">
         <h2 className="text-2xl font-bold mb-4">We're Hiring!</h2>
         <p className="text-muted-foreground mb-6">Join our team of talented hair professionals and grow with us!</p>
         <Button variant="outline" asChild>
           <Link href="/careers">View Positions</Link>
         </Button>
-      </PageSection>
+      </PageSection> */}
 
       {/* Journey Section */}
       <PageSection>

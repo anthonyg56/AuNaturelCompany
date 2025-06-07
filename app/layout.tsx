@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import AppQueryClientProvider from "@/providers/QueryClientProvider"
 import Navbar from "@/components/layouts/navbar"
 import Footer from "@/components/layouts/foooter"
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -43,6 +44,7 @@ export default function RootLayout({
             <Footer />
           </ThemeProvider>
         </AppQueryClientProvider>
+        <Analytics />
       </body>
     </html>
   )
