@@ -1,8 +1,8 @@
 "use client"
 import { Facebook, Twitter } from "lucide-react";
-
 import { Instagram } from "lucide-react";
 import { AccentText } from "../accent-text";
+import { TikTokSVG } from "../icons/tiktok";
 
 import Link from "next/link";
 import { Separator } from "@radix-ui/react-separator";
@@ -133,7 +133,7 @@ export default function Footer() {
                 <Facebook className="h-5 w-5" />
               </Link>
               <Link href="https://www.tiktok.com/@shyn_trademarked" className="text-primary hover:text-primary transition-colors">
-                <Twitter className="h-5 w-5" />
+                <TikTokSVG className="h-5 w-5" />
               </Link>
             </div>
           </div>
